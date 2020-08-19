@@ -1,10 +1,8 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Site Title`,
+    description: `Site Description`,
+    author: `@gristleism`,
+  },
+  plugins: [`gatsby-plugin-layout`, `gatsby-plugin-react-helmet`],
 }
