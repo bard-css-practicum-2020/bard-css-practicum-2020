@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Authentic Sans";
+  src: url("./WOFF/AUTHENTICSans-90.woff2") format("woff2"),
+    url("./WOFF/AUTHENTICSans-90.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Authentic Sans Bold";
+  src: url("./WOFF/AUTHENTICSans-150.woff2") format("woff2"),
+    url("./WOFF/AUTHENTICSans-150.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Authentic Sans Condensed";
+  src: url("./WOFF/AUTHENTICSans-Condensed-60.woff2") format("woff2"),
+    url("./WOFF/AUTHENTICSans-Condensed-60.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Authentic Sans Condensed Bold";
+  src: url("./WOFF/AUTHENTICSans-Condensed-150.woff2") format("woff2"),
+    url("./WOFF/AUTHENTICSans-Condensed-150.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}

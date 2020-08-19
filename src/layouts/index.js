@@ -9,6 +9,9 @@ import "normalize.css"
 /* Import Global Reset */
 import "./reset.css"
 
+/* Import Fonts */
+import "~assets/fonts/authentic-sans/authentic-sans.css"
+
 /* Import Global Styles */
 import "./index.css"
 
