@@ -1,0 +1,22 @@
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.project .time {
+  flex-grow: 0;
+  width: 4rem;
+}
+
+.project .information {
+  flex-grow: 1;
+}
+
+.project .information .title {
+  text-transform: uppercase;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+.project .information .authors {
+}

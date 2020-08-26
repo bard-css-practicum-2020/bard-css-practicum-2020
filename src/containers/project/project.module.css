@@ -1,0 +1,13 @@
+.project {
+}
+
+.project .title {
+  margin-bottom: 0;
+}
+
+.project .author {
+}
+
+.project .content {
+  max-width: 600px;
+}

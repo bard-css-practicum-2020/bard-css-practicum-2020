@@ -1,9 +1,9 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Index = () => (
   <div>
-    <h1>Index</h1>
-    <p>Index Page</p>
+    <Link to="projects">Projects</Link>
   </div>
 )
 

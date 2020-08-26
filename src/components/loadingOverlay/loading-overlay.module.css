@@ -1,0 +1,20 @@
+.loading-overlay {
+  opacity: 1;
+  /* position */
+  position: fixed;
+  /* size */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* color */
+  background-color: var(--color-white);
+  /* transition */
+  transition: opacity 0.3s;
+  /* misc */
+  pointer-events: none;
+}
+
+.loading-overlay.loaded {
+  opacity: 0;
+}

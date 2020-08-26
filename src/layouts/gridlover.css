@@ -1,0 +1,77 @@
+/* https://www.gridlover.net */
+html,
+.root {
+  font-size: 20px;
+  line-height: 28px;
+}
+body,
+.article {
+  font-family: "Authentic Sans";
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+h1,
+.h1 {
+  font-size: 4.2rem;
+  line-height: 4.2rem;
+  margin-top: 1.4rem;
+  margin-bottom: 2.8rem;
+}
+h2,
+.h2 {
+  font-size: 2.6rem;
+  line-height: 2.8rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+h3,
+.h3 {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0rem;
+}
+h4,
+.h4 {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0rem;
+}
+h5,
+.h5 {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0rem;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote,
+.p {
+  margin-top: 0rem;
+  margin-bottom: 1.4rem;
+}
+.p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+/* Let's make sure all's aligned */
+hr,
+.hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
