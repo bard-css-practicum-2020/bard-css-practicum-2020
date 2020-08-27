@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Index = () => (
   <div>
-    <Link to="projects">Projects</Link>
+    <p>Index</p>
   </div>
 )
 
