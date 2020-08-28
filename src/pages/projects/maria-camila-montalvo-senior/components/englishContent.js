@@ -3,6 +3,13 @@ import React from "react"
 /* Import Global Components */
 import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
+import Image from "~components/image/image"
+
+/* Import Local Assets */
+import LovingSuitsSrc from "../assets/1-loving-suits.jpg"
+import OrdenamientoSilvestreSrc from "../assets/2-ordenamiento-silvestre.jpg"
+import AnticonquistaCafeSrc from "../assets/3-anticonquista-cafe.jpg"
+import ThisIsWeirdWithoutYouSrc from "../assets/4-this-is-weird-without-you.jpg"
 
 const EnglishContent = () => (
   <div>
@@ -98,6 +105,7 @@ const EnglishContent = () => (
       us, the importance of this project is related to the power in the creation
       of that world to come.
     </InterviewAnswer>
+    <Image src={LovingSuitsSrc} alt="Loving Suits" />
     <InterviewQuestion interviewer="MCMS">
       This time we are living through with COVID-19 is, in short, a time in
       which we are forced to observe ourselves and one another. But here I am
@@ -182,6 +190,7 @@ const EnglishContent = () => (
       projection and an artists’ talk to establish a conversation about how
       language and words have a performative role in our society.
     </InterviewAnswer>
+    <Image src={OrdenamientoSilvestreSrc} alt="Loving Suits" />
     <InterviewQuestion interviewer="MCMS">
       I relate to the exercise of observing and listening to silence. Over the
       last month and a half we have been on pause ("New York State on PAUSE").
@@ -248,6 +257,7 @@ const EnglishContent = () => (
       has always been there, but today is becoming more evident, has led us to
       establish a network of solidarity.
     </InterviewAnswer>
+    <Image src={AnticonquistaCafeSrc} alt="Loving Suits" />
     <InterviewQuestion interviewer="MCMS">
       On the other hand, there is the work{" "}
       <a
@@ -536,6 +546,7 @@ const EnglishContent = () => (
       different countries and different contexts, it is fundamental to
       understand our cultures. This is also an act of solidarity.{" "}
     </InterviewAnswer>
+    <Image src={ThisIsWeirdWithoutYouSrc} alt="THIS IS WEIRD WITHOUT YOU" />
     <InterviewQuestion interviewer="MCMS">
       It is a fact that COVID-19 is not just a disease in the body itself, but
       rather functions as a biopolitical agent that permeates racial, social

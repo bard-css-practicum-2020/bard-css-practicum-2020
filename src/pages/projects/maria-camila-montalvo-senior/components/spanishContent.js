@@ -3,6 +3,13 @@ import React from "react"
 /* Import Global Components */
 import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
+import Image from "~components/image/image"
+
+/* Import Local Assets */
+import LovingSuitsSrc from "../assets/1-loving-suits.jpg"
+import OrdenamientoSilvestreSrc from "../assets/2-ordenamiento-silvestre.jpg"
+import AnticonquistaCafeSrc from "../assets/3-anticonquista-cafe.jpg"
+import ThisIsWeirdWithoutYouSrc from "../assets/4-this-is-weird-without-you.jpg"
 
 const SpanishContent = () => (
   <div>
@@ -98,6 +105,7 @@ const SpanishContent = () => (
       para nosotras está relacionado con la potencia de la creación de ese mundo
       futuro.
     </InterviewAnswer>
+    <Image src={LovingSuitsSrc} alt="Loving Suits" />
     <InterviewQuestion interviewer="MCMS">
       Este tiempo que estamos viviendo ahora con el COVID-19 es, en definitiva,
       un tiempo en el que se nos obliga a observarnos lxs unxs a lxs otrxs. Pero
@@ -199,6 +207,7 @@ const SpanishContent = () => (
       necesariamente están relacionados directamente al mundo del arte sentirse
       identificados con las historias o relatos que se presentaron.
     </InterviewAnswer>
+    <Image src={OrdenamientoSilvestreSrc} alt="Ordenamiento Silvestre" />
     <InterviewQuestion interviewer="MCMS">
       El ejercicio de observar y escuchar, lo relaciono con el silencio. Desde
       hace un mes y medio que entramos en pausa (“New York State on PAUSE”), yo
@@ -268,6 +277,7 @@ const SpanishContent = () => (
       pero que hoy se hace más evidente, nos ha llevado a entablar una red de
       solidaridad.
     </InterviewAnswer>
+    <Image src={AnticonquistaCafeSrc} alt="Anticonquistas café" />
     <InterviewQuestion interviewer="MCMS">
       Por otro lado, está el trabajo “
       <a
@@ -573,6 +583,7 @@ const SpanishContent = () => (
       por ende, es fundamental entender nuestras culturas. Esto también es un
       acto de solidaridad.
     </InterviewAnswer>
+    <Image src={ThisIsWeirdWithoutYouSrc} alt="Anticonquistas café" />
     <InterviewQuestion interviewer="MCMS">
       Es un hecho que el Covid-19 no se trata de una enfermedad en el cuerpo en
       sí, y que más bien funciona como agente biopolítico que impregna esferas
