@@ -2,3 +2,13 @@
   font-family: "Authentic Sans Bold";
   font-weight: normal;
 }
+
+.interview-question span.interviewer {
+  font-family: "Authentic Sans";
+  font-weight: normal;
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 1ch;
+}

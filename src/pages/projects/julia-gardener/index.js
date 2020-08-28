@@ -4,6 +4,7 @@ import React from "react"
 import Project from "~containers/project/project"
 
 /* Import Global Components */
+import Paragraph from "~components/paragraph/paragraph"
 import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 
@@ -12,51 +13,81 @@ const JuliaGardenerProject = () => (
     title="PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk"
     author="Julia Gardener"
   >
-    <p>
-      This interview with <a href="">Magdalena Moskalewicz</a> and{" "}
-      <a href="">Daniel Muzyczuk</a> discusses the Polish Radio Experimental
-      Studio, otherwise known as PRES. In her introduction to the Studio,
-      Moskalewicz positions PRES as “a site—understood equally as institution,
-      physical space, and a circle of individuals.” This exchange departs from
-      this multidimensional approach to PRES, while emphasizing Moskalewicz’s
-      and Muzyczuk’s work—as curators, art historians, and researchers— along
-      with the Studio’s history and legacy.
-    </p>
-    <p>
+    <Paragraph>
+      This interview with{" "}
+      <a href="https://post.at.moma.org/profiles/21-magdalena-moskalewicz">
+        Magdalena Moskalewicz
+      </a>{" "}
+      and{" "}
+      <a href="https://post.at.moma.org/profiles/919-daniel-muzyczuk">
+        Daniel Muzyczuk
+      </a>{" "}
+      discusses the Polish Radio Experimental Studio, otherwise known as PRES.
+      In her introduction to the Studio, Moskalewicz positions PRES as “a
+      site—understood equally as institution, physical space, and a circle of
+      individuals.” This exchange departs from this multidimensional approach to
+      PRES, while emphasizing Moskalewicz’s and Muzyczuk’s work—as curators, art
+      historians, and researchers— along with the Studio’s history and legacy.
+    </Paragraph>
+    <Paragraph>
       PRES was the first center for electronic music east of the Iron
       Curtain—and the seventh studio of its kind in the world—established to
       explore, produce, and disseminate new sonic possibilities. Founded in
       1957, the Studio continued to operate until 2004. Though its inception was
       predicated on producing requisite{" "}
-      <a href="">Warsaw Autumn International Festival</a> of Contemporary Music
-      music for state radio broadcasts and film soundtracks, the Studio also
-      made autonomous electronic pieces and independent compositions. While its
-      most widely known outputs were undoubtedly film scores, The , which
-      continues to operate to this day, was a key way in which PRES’s
-      independent material reached the public. The Studio was spearheaded by
-      <a href="">Józef Patkowski</a>, with Krzysztof Szlifirski, Wojciech
-      Makowski, Anna Skrzyńska, <a href="">Eugeniusz Rudnik</a>, and Bohdan
-      Mazurek forming the original team. Later, the Studio would also draw in
-      Grażyna Karaśkiewicz, Barbara Okoń-Makowska, Ewa Guziołek-Tubelewicz,
-      Tadeusz Sudnik, and Ryszard Szeremeta. It constituted a crucial center,
-      attracting both local and international composers to work with its
-      equipment and sound engineers. Some of these artists were{" "}
-      <a href="">Włodzimierz Kotoński</a>, <a href="">Andrzej Dobrowolski</a>,{" "}
-      <a href="">Krzysztof Penderecki</a>, <a href="">Bogusław Schaeffer</a>,
-      Elżbieta Sikora, Tomasz Sikorski, Krzysztof Knittel, Arne Nordheim,
+      <a href="www.warszawska-jesien.art.pl/en/wj2017/o-festiwalu/warszawska-jesien">
+        Warsaw Autumn International Festival
+      </a>{" "}
+      of Contemporary Music music for state radio broadcasts and film
+      soundtracks, the Studio also made autonomous electronic pieces and
+      independent compositions. While its most widely known outputs were
+      undoubtedly film scores, The , which continues to operate to this day, was
+      a key way in which PRES’s independent material reached the public. The
+      Studio was spearheaded by
+      <a href="https://post.at.moma.org/profiles/910-jozef-patkowski">
+        Józef Patkowski
+      </a>
+      , with Krzysztof Szlifirski, Wojciech Makowski, Anna Skrzyńska,{" "}
+      <a href="https://post.at.moma.org/profiles/973-eugeniusz-rudnik">
+        Eugeniusz Rudnik
+      </a>
+      , and Bohdan Mazurek forming the original team. Later, the Studio would
+      also draw in Grażyna Karaśkiewicz, Barbara Okoń-Makowska, Ewa
+      Guziołek-Tubelewicz, Tadeusz Sudnik, and Ryszard Szeremeta. It constituted
+      a crucial center, attracting both local and international composers to
+      work with its equipment and sound engineers. Some of these artists were{" "}
+      <a href="https://post.at.moma.org/profiles/896-wlodzimierz-kotonski">
+        Włodzimierz Kotoński
+      </a>
+      ,{" "}
+      <a href="https://post.at.moma.org/profiles/908-andrzej-dobrowolski">
+        Andrzej Dobrowolski
+      </a>
+      ,{" "}
+      <a href="https://post.at.moma.org/profiles/1059-krzysztof-penderecki">
+        Krzysztof Penderecki
+      </a>
+      ,{" "}
+      <a href="https://post.at.moma.org/profiles/1064-boguslaw-schaeffer">
+        Bogusław Schaeffer
+      </a>
+      , Elżbieta Sikora, Tomasz Sikorski, Krzysztof Knittel, Arne Nordheim,
       Dubravko Detoni, Franco Evangelisti, Roland Kayn, and Teresa Rampazzi.
-    </p>
-    <p>
+    </Paragraph>
+    <Paragraph>
       PRES operated out of what was known as the “Black Room.” A 6 x 6 meter
       studio was designed by the renowned Polish architects Oskar and Zofia
       Hansen. Tightly fitted with modular elements, innovative equipment,
       rotating frames, and movable panels, the room was both an audio tool and
       an audiovisual device. It was designed according to Oskar Hansen’s{" "}
-      <a href="">Open Form theory</a>, which dictates that architectural space
-      should be adaptable to its users. Crucially, the Black Room was located in
-      the state-owned Polish Radio building in Warsaw.
-    </p>
-    <p>
+      <a href="https://artmuseum.pl/en/publikacje/oskar-hansen-opening-modernism-on-open-form-architecture">
+        Open Form theory
+      </a>
+      , which dictates that architectural space should be adaptable to its
+      users. Crucially, the Black Room was located in the state-owned Polish
+      Radio building in Warsaw.
+    </Paragraph>
+    <Paragraph>
       During the 50-odd years of the Studio’s operation, the sociopolitical
       climate in Poland went through critical shifts. On the one hand, for much
       of PRES’s history, Poland was still the Polish People’s Republic
@@ -67,21 +98,45 @@ const JuliaGardenerProject = () => (
       as a particularly active period in Polish culture. In 1989 Poland
       transitioned from a communist to democratic state and in 2004 it joined
       the European Union.
-    </p>
-    <p>
+    </Paragraph>
+    <Paragraph>
       Since the Studio’s closure that same year, there has been a newfound wave
       of interest in their production. Notably, the products of this enthusiasm
-      include: post, MoMA’s digital research platform with a dedicated section
-      on PRES (with an extended list of sources here); Sounding the Body
-      Electric: Experiments in Art and Music in Eastern Europe 1957–1984, an
-      exhibition held at Muzeum Sztuki in in 2012 and in Calvert 22 in London in
-      2013, plus the accompanying catalogue; that released an anthological
-      series of PRES music; Through the Soundproof Curtain, an exhibition held
-      at ZKM | Karlsruhe in 2018; and subsequently Ultra Sounds: The Sonic Art
-      of Polish Radio Experimental Studio, a book released by ZKM | Karlsruhe in
-      2019. It is hoped that this interview will make a small contribution to
-      this rich web of PRES resources.
-    </p>
+      include:{" "}
+      <a href="https://post.at.moma.org/themes/14-polish-radio-experimental-studio-a-close-look">
+        post
+      </a>
+      , MoMA’s digital research platform with a dedicated section on PRES (with
+      an extended list of sources{" "}
+      <a href="https://post.at.moma.org/content_items/400-polish-radio-experimental-studio-a-galaxy-of-writings-prints-and-sound">
+        here
+      </a>
+      ); Sounding the Body Electric: Experiments in Art and Music in Eastern
+      Europe 1957–1984, an exhibition held at{" "}
+      <a href="https://msl.org.pl/sounding/">Muzeum Sztuki</a> in in 2012 and in
+      <a href="https://www.calvertjournal.com/events/show/10927/sounding-the-body-electric">
+        Calvert 22
+      </a>{" "}
+      in London in 2013, plus the{" "}
+      <a href="https://msl.org.pl/sounding-the-body-electric--experiments-in-art-and-music-in-eastern-europe-1957-1984/">
+        accompanying catalogue
+      </a>
+      ; that released{" "}
+      <a href="www.boltrecords.pl/2,polish-radio,en.html">
+        an anthological series
+      </a>{" "}
+      of PRES music;{" "}
+      <a href="https://zkm.de/en/event/2018/07/opening-through-the-soundproof-curtain">
+        Through the Soundproof Curtain
+      </a>
+      , an exhibition held at ZKM | Karlsruhe in 2018; and subsequently{" "}
+      <a href="https://www.kehrerverlag.com/en/ultra-sounds-the-sonic-art-of-polish-radio-experimental-studio-978-3-86828-921-3">
+        Ultra Sounds: The Sonic Art of Polish Radio Experimental Studio
+      </a>
+      , a book released by ZKM | Karlsruhe in 2019. It is hoped that this
+      interview will make a small contribution to this rich web of PRES
+      resources.
+    </Paragraph>
     <InterviewQuestion>
       What, to you, was PRES? Or rather, what of PRES are you most determined to
       research, preserve, or extend? Magdalena’s introduction notes that it can
@@ -129,47 +184,60 @@ const JuliaGardenerProject = () => (
     <InterviewAnswer subject="MM">
       Three things came into play that led me to PRES. At the time, in 2012, I
       was working at The Museum of Modern Art conducting research into the
-      Gilbert and Lila Silverman Fluxus Collection, Łódź Bôłt Records, a record
-      label Karlsruhe in 2019. It is hoped this interview will make a small
-      contribution to this rich web of PRES ZKM | Karlsruhe in 2018; and
-      subsequently ZKM | resources. and specifically focusing on Fluxus
-      connections in Eastern Europe. I was also one of the founding editors of
-      post, MoMA’s digital publication about to launch in early 2013, and
-      together with my colleagues I was planning initial content on modern art
-      from Latin America, East Asia, and Eastern Europe—it was my job to
-      envision a subject for the latter. The first thing was that I had just
-      completed a PhD that looked at experimental art in Poland between roughly
-      1955 and 1970, and so that was my main expertise. The second, that the
-      Polish connection of George Maciunas in that early moment of Fluxus was
-      Józef Patkowski—the two had met long before PRES or Fluxus ever
-      existed—which led my research from visual arts into the milieu of
-      experimental music. The third was that other content planned for post was
-      thematizing Sogetsu Art Center, a major hub for experimental music in
-      Tokyo, which meant that the editorial team gave a lot of thought to the
-      idea of site as a conveyor for artistic practice. These three elements:
-      Fluxus, Poland, and focus on sites of artistic production came together to
-      bring to my attention the Polish Radio Experimental Studio as the perfect
-      case study.
+      <a href="https://post.at.moma.org/content_items/708-by-the-way-what-s-fluxus-jon-hendricks-on-the-formation-of-the-gilbert-and-lila-silverman-fluxus-collection">
+        Gilbert and Lila Silverman Fluxus Collection
+      </a>
+      , and specifically focusing on Fluxus connections in Eastern Europe . I
+      was also one of the founding editors of{" "}
+      <a href="https://post.at.moma.org">post</a>, MoMA’s digital publication
+      about to launch in early 2013, and together with my colleagues I was
+      planning initial content on modern art from Latin America, East Asia, and
+      Eastern Europe—it was my job to envision a subject for the latter. The
+      first thing was that I had just completed a PhD that looked at
+      experimental art in Poland between roughly 1955 and 1970, and so that was
+      my main expertise. The second, that the Polish connection of George
+      Maciunas in that early moment of Fluxus was Józef Patkowski—the two had
+      met long before PRES or Fluxus ever existed—which led my research from
+      visual arts into the milieu of experimental music. The third was that
+      other content planned for post was thematizing{" "}
+      <a href="https://post.at.moma.org/content_items/154-a-very-brief-history-of-the-sogetsu-art-center">
+        Sogetsu Art Center
+      </a>
+      , a major hub for experimental music in Tokyo, which meant that the
+      editorial team gave a lot of thought to the idea of <i>site</i> as a
+      conveyor for artistic practice. These three elements: Fluxus, Poland, and
+      focus on sites of artistic production came together to bring to my
+      attention the Polish Radio Experimental Studio as the perfect case study.
     </InterviewAnswer>
     <InterviewAnswer subject="DM">
       There were two decisive moments when it comes to tracing the recent
       research on the Studio work. The initial impulse came from two curators
-      involved with the music scene: Michał Mendyk and Michał Libera, who
-      started uncovering the archives of PRES in an unorthodox manner. Since
-      access to the musical material made at the institute was restricted, they
-      used publicly available scores to reformulate the questions posed by music
-      on tape. Through their projects they were trying to reimagine the music
-      through commissioning new interpretations of these materials. The scores
-      that were intended to be used as a source for consultation—and were
+      involved with the music scene: Michał Mendyk and
+      <a href="https://post.at.moma.org/profiles/891-michal-libera">
+        Michał Libera
+      </a>
+      , who started uncovering the archives of PRES in an unorthodox manner.
+      Since access to the musical material made at the institute was restricted,
+      they used publicly available scores to reformulate the questions posed by
+      music on tape. Through their projects they were trying to reimagine the
+      music through commissioning new interpretations of these materials. The
+      scores that were intended to be used as a source for consultation—and were
       sometimes even created only after the piece of music was completed—started
       to be treated as an invitation to be shaped anew. This reconstructive look
       toward the future was truly inspiring. Later Mendyk started a whole series
-      of anthologies at Bôłt Records, dedicated to uncovering different aspects
-      of music produced at PRES. This should be seen as a logical consequence of
-      the initial unorthodox and creative moment. The other trigger was the fact
-      that David Crowley had an idea to organize an exhibition [Sounding the
-      Body Electric: Experiments in Art and Music in Eastern Europe 1957– 1984]
-      around the theme of the intersection of art and new music in socialist
+      of anthologies at <a href="boltrecords.pl/">Bôłt Records</a>, dedicated to
+      uncovering different aspects of music produced at PRES. This should be
+      seen as a logical consequence of the initial unorthodox and creative
+      moment. The other trigger was the fact that{" "}
+      <a href="https://post.at.moma.org/profiles/753-david-crowley">
+        David Crowley
+      </a>{" "}
+      had an idea to organize an exhibition [
+      <i>
+        Sounding the Body Electric: Experiments in Art and Music in Eastern
+        Europe 1957– 1984
+      </i>
+      ] around the theme of the intersection of art and new music in socialist
       countries after 1956. He approached Muzeum Sztuki and I joined him in this
       journey. The research was focused on the involvement of PRES with cinema
       and visual arts, so it formed a natural alliance with Bôłt Records. The
@@ -205,9 +273,9 @@ const JuliaGardenerProject = () => (
       between an online magazine, a digital archive, and a project space.
       Looking at PRES as a site—rather than a group of people—allowed us to
       include a variety of materials without imposing an artistic hierarchy. I
-      have seen people calling the PRES material on post an “online exhibition,”
-      and I guess that is not incorrect, though I do think that doesn’t account
-      for the hybridity of the format.
+      have seen people calling the PRES material on <i>post</i> an “online
+      exhibition,” and I guess that is not incorrect, though I do think that
+      doesn’t account for the hybridity of the format.
     </InterviewAnswer>
     <InterviewQuestion>
       And what about bringing PRES specifically into an art context?
@@ -229,29 +297,40 @@ const JuliaGardenerProject = () => (
       needed to consider reconstructions of key intermedia works that were not
       preserved or well documented. The methodology offered by the graphic score
       proved to be adequate. Hence, for the Sounding the Body Electric show, we
-      were able to document a new performance of a piece written by a visual
-      artist Krzysztof Wodiczko and composer Szabolcs Esztényi. The same
-      principle was used to build the reconstruction of the first sound
-      installation in Poland—Spatial-Musical Composition by Zygmunt Krauze,
-      Teresa Kelm, and Henryk Morel in 1968. The work of this team—consisting of
-      a composer, an architect, and a sculptor—was also treated as if it was a
-      score, which allowed us to construct another performance.
+      were able to document{" "}
+      <a href="www.boltrecords.pl/2,polish-radio/12,sounding-the-body-electric,pl.html">
+        a new performance of a piece
+      </a>{" "}
+      written by a visual artist Krzysztof Wodiczko and composer Szabolcs
+      Esztényi. The same principle was used to build the reconstruction of the
+      first sound installation in Poland—
+      <a href="boltrecords.pl/5,polish-oldschool/27,zygmunt-krauze-spatial-music,pl.html">
+        Spatial-Musical Composition
+      </a>{" "}
+      by Zygmunt Krauze, Teresa Kelm, and Henryk Morel in 1968. The work of this
+      team—consisting of a composer, an architect, and a sculptor—was also
+      treated as if it was a score, which allowed us to construct another
+      performance.
     </InterviewAnswer>
     <InterviewQuestion>
       In an effort to build on the history of PRES, where do you position
       musical (re)interpretations? For example, I am thinking here about the
-      establishment of the PRES sound library in 2018 and the subsequent music
-      competition in 2019, which asked participants to use samples from the
-      library to create new compositions. Is this what it means to extend the
-      history of PRES? To continue its ethos of recycling sound? To make its
-      sound contemporary?
+      establishment of the{" "}
+      <a href="https://www.ableton.com/en/blog/sounds-polish-radio-experimental-studio/">
+        PRES sound library
+      </a>{" "}
+      in 2018 and the subsequent music competition in 2019, which asked
+      participants to use samples from the library to create new compositions.
+      Is this what it means to extend the history of PRES? To continue its ethos
+      of recycling sound? To make its sound contemporary?
     </InterviewQuestion>
     <InterviewAnswer subject="DM">
       This is a direct continuation of the efforts of Mendyk that I mentioned
       earlier. Both Libera and Mendyk saw their curatorial work with the PRES
       archives not only as archival, but also as intermediary—those that create
       the context for past works to feel relevant. There is one more level to
-      this activity. Unlike GRM in Paris or EMS in Stockholm, PRES was closed.
+      this activity. Unlike <a href="https://inagrm.com/fr">GRM</a> in Paris or{" "}
+      <a href="elektronmusikstudion.se/">EMS</a> in Stockholm, PRES was closed.
       These other studios still welcome composers, who are allowed to use their
       equipment and archives. The works from the 60s have a natural continuation
       in the pieces by younger generations. The opening of the sound library is
@@ -292,8 +371,11 @@ const JuliaGardenerProject = () => (
     </InterviewAnswer>
     <InterviewQuestion>
       Following from this, Daniel, I wanted to open the next question with a
-      reference to an incredible segment from an interview you did with
-      Eugeniusz Rudnik, where he said:
+      reference to an incredible segment from{" "}
+      <a href="https://post.at.moma.org/content_items/336-how-much-rudnik-is-in-penderecki-and-how-much-rudnik-is-in-nordheim-interview-with-eugeniusz-rudnik">
+        an interview
+      </a>{" "}
+      you did with Eugeniusz Rudnik, where he said:
     </InterviewQuestion>
     <InterviewQuestion>
       Did the creation of art ennoble that empty shell of a state? Should I be
@@ -322,33 +404,46 @@ const JuliaGardenerProject = () => (
       some of them do stand out as political statements.
     </InterviewAnswer>
     <InterviewAnswer>
-      Agnieszka Pindera recently published a biography of Patkowski—the first
-      director of PRES. It gives a good idea of the politics of new music and
-      the role of the employees of Polish Radio. Patkowski, as the head of the
-      Polish Composers’ Union, decided that during martial law the Warsaw Autumn
-      Festival would not take place. This was probably one of the decisions that
-      led to him losing his position at the Studio. PRES took part in the
-      discussions on the passive role of the viewer/listener of new music and on
-      the process of emancipation of the performer. This was not only seen in
-      music. A similar movement of visual artists connected with the GRAV
-      collective was associated with the restructuring of public space and
-      politics around May 1968. Thus, all the projects connected with the
-      emancipation of listener and performer should be seen in a political
-      horizon—even if, for the authorities, they were solely reserved for
-      internal discussions. Then there was a group of works that were also
-      posing more direct political questions. This includes the works of
-      Krzysztof Wodiczko, an industrial designer who entered the field of
-      audiovisual art with questions on autonomy of art and its efficiency in
-      real life. His Personal Instrument is exactly the kind of project that
-      allows us to see how sound can be political. He created a set of gloves
-      with photo sensors and microphones that controlled the sounds delivered to
-      the user via headset. So the piece allowed one to control the sonosphere
-      of a strictly controlled public sphere. Some of Krzysztof Knittel’s
-      compositions from the 70s also touch on the possibility of creating
-      spheres of autonomy for the artist, along with the social and political
-      limits of these spaces. Finally, there was a group that was directly and
-      socially involved. For the Scandinavian Pavilion at the Expo in Osaka in
-      1970, Arne Nordheim, with assistance from Rudnik, created a piece that
+      <a href="https://post.at.moma.org/profiles/952-agnieszka-pindera">
+        Agnieszka Pindera
+      </a>{" "}
+      recently published{" "}
+      <a href="https://agapindera.com/filter/publication/Patkowski-Ambasador-muzyki-z-Marsa">
+        a biography of Patkowski
+      </a>
+      —the first director of PRES. It gives a good idea of the politics of new
+      music and the role of the employees of Polish Radio. Patkowski, as the
+      head of the Polish Composers’ Union, decided that during martial law the
+      Warsaw Autumn Festival would not take place. This was probably one of the
+      decisions that led to him losing his position at the Studio. PRES took
+      part in the discussions on the passive role of the viewer/listener of new
+      music and on the process of emancipation of the performer. This was not
+      only seen in music. A similar movement of visual artists connected with
+      the{" "}
+      <a href="https://monoskop.org/Groupe_de_Recherche_d%27Art_Visuel">
+        GRAV collective
+      </a>{" "}
+      was associated with the restructuring of public space and politics around
+      May 1968. Thus, all the projects connected with the emancipation of
+      listener and performer should be seen in a political horizon—even if, for
+      the authorities, they were solely reserved for internal discussions. Then
+      there was a group of works that were also posing more direct political
+      questions. This includes the works of Krzysztof Wodiczko, an industrial
+      designer who entered the field of audiovisual art with questions on
+      autonomy of art and its efficiency in real life. His{" "}
+      <a href="https://zasoby.msl.org.pl/arts/view/110">Personal Instrument</a>
+      is exactly the kind of project that allows us to see how sound can be
+      political. He created a set of gloves with photo sensors and microphones
+      that controlled the sounds delivered to the user via headset. So the piece
+      allowed one to control the sonosphere of a strictly controlled public
+      sphere. Some of Krzysztof Knittel’s compositions from the 70s also touch
+      on the possibility of creating spheres of autonomy for the artist, along
+      with the social and political limits of these spaces. Finally, there was a
+      group that was directly and socially involved. For the{" "}
+      <a href="Scandinavian Pavilion at the Expo in Osaka">
+        Scandinavian Pavilion at the Expo in Osaka
+      </a>{" "}
+      in 1970, Arne Nordheim, with assistance from Rudnik, created a piece that
       used a live mix of audio recordings indicating ecological struggles. Art
       was used to direct the gaze of the listener towards these issues.
     </InterviewAnswer>
@@ -367,7 +462,8 @@ const JuliaGardenerProject = () => (
       limiting.
     </InterviewAnswer>
     <InterviewQuestion>
-      I wanted to mention a project called Cities and Memory, which is a
+      I wanted to mention a project called{" "}
+      <a href="https://citiesandmemory.com/">Cities and Memory</a>, which is a
       crowdsourced site for pooling together field recordings from across the
       world. Recently, it has charted how our aural lives are changing under the
       pandemic lockdown—it brings together the sound of a near-silent Times
@@ -396,12 +492,15 @@ const JuliaGardenerProject = () => (
       delicate balance between familiarity and novelty.
     </InterviewAnswer>
     <InterviewQuestion>
-      The Studio has been described as “an island of international connection.”
-      Especially in its earlier years, this was a central part of its
-      significance and success—the ability to host and collaborate with
-      composers from abroad. When you were charting the history of the Studio,
-      how much of the narrative felt distinctly local and how much felt
-      principally international?
+      The Studio has been{" "}
+      <a href="https://www.kehrerverlag.com/en/ultra-sounds-the-sonic-art-of-polish-radio-experimental-studio-978-3-86828-921-3">
+        described as
+      </a>{" "}
+      “an island of international connection.” Especially in its earlier years,
+      this was a central part of its significance and success—the ability to
+      host and collaborate with composers from abroad. When you were charting
+      the history of the Studio, how much of the narrative felt distinctly local
+      and how much felt principally international?
     </InterviewQuestion>
     <InterviewAnswer subject="DM">
       The Studio drew attention to itself from the start, as many Western
@@ -438,14 +537,23 @@ const JuliaGardenerProject = () => (
     <InterviewQuestion>
       What about the Black Room, PRES’s studio space designed by the famous
       Polish architects, Oskar and Zofia Hansen? Józef Patkowski’s dedication to
-      creating a special space for electronic music has been described as an
-      “unheard-of phenomenon,” lauded for looking to pair function with
+      creating a special space for electronic music has been{" "}
+      <a href="https://post.at.moma.org/content_items/336-how-much-rudnik-is-in-penderecki-and-how-much-rudnik-is-in-nordheim-interview-with-eugeniusz-rudnik">
+        described
+      </a>{" "}
+      as an “unheard-of phenomenon,” lauded for looking to pair function with
       impressive architectural design. Since then, it’s been heavily
-      mythologized, described as “an instrument” and “sound laboratory.” In
-      reality, how much of that was the space itself? Has it been lost forever?
-      Does it matter? I’ve read that Warsaw’s Museum of Modern Art had the
-      intention of rebuilding it, but I haven’t been able to confirm what’s
-      happened since.
+      mythologized,{" "}
+      <a href="https://culture.pl/en/work/ultra-sounds-the-sonic-art-of-polish-radio-experimental-studio-david-crowley-ed">
+        described
+      </a>{" "}
+      as “an instrument” and “sound laboratory.” In reality, how much of that
+      was the space itself? Has it been lost forever? Does it matter? I’ve read
+      that Warsaw’s Museum of Modern Art{" "}
+      <a href="https://culture.pl/en/article/who-is-eugeniusz-rudnik">
+        had the intention of rebuilding it
+      </a>
+      , but I haven’t been able to confirm what’s happened since.
     </InterviewQuestion>
     <InterviewAnswer subject="DM">
       The Museum of Modern Art in Warsaw has indeed announced that the new
@@ -478,14 +586,20 @@ const JuliaGardenerProject = () => (
       museum?
     </InterviewAnswer>
     <InterviewQuestion>
-      Magdalena, I wanted to turn to your essay on magnetic tape as an
-      instrument. In it, you mention the first electroacoustic concert in
-      Poland, which took place in 1960—an event that was part of the Warsaw
-      Autumn Festival, which had notable overlaps with the Studio. It was the
-      first occasion for playing Włodzimierz Kotoński’s Study for One Cymbal
-      Stroke, one of the first and most famous compositions to come out of PRES.
-      It’s a unique and notable concert, because, save for loudspeakers, the
-      stage was virtually empty. What do you think liveness meant for PRES? And
+      Magdalena, I wanted to turn to{" "}
+      <a href="https://post.at.moma.org/content_items/383-magnetic-tape-as-instrument-a-rare-selection-of-electroacoustic-music-from-poland">
+        your essay
+      </a>{" "}
+      on magnetic tape as an instrument. In it, you mention the first
+      electroacoustic concert in Poland, which took place in 1960—an event that
+      was part of the Warsaw Autumn Festival, which had notable overlaps with
+      the Studio. It was the first occasion for playing Włodzimierz Kotoński’s
+      <a href="www.warszawska-jesien.art.pl/en/wj2017/program-i-bilety-2017/work/702458313">
+        Study for One Cymbal Stroke
+      </a>
+      , one of the first and most famous compositions to come out of PRES. It’s
+      a unique and notable concert, because, save for loudspeakers, the stage
+      was virtually empty. What do you think liveness meant for PRES? And
       gathering?
     </InterviewQuestion>
     <InterviewAnswer subject="MM">
@@ -504,7 +618,10 @@ const JuliaGardenerProject = () => (
       experimentation.
     </InterviewAnswer>
     <InterviewQuestion>
-      I have a twofold question about PRES’s audience. You’ve both emphasized
+      I have a twofold question about PRES’s audience. You’ve both{" "}
+      <a href="https://www.thefirstnews.com/article/fascinating-exhibition-tells-the-story-of-polands-avant-garde-music-scene-1261">
+        emphasized
+      </a>
       that during its time of operation PRES was a “hermetic place,” a “niche”
       that was principally of interest to musical experts, connoisseurs, and
       specialists. Composers and artists would come to PRES specifically to
@@ -512,16 +629,19 @@ const JuliaGardenerProject = () => (
       long-lasting collaboration with Eugeniusz Rudnik. This translated into a
       large share of their autonomous work not being familiar to a wider
       public—aside from the radio, most people didn’t have musical equipment at
-      home and the Studio rarely shared musical scores. Rudnik cites special but
-      poorly attended concerts in the basement of the National Philharmonic. But
-      of course, its dual role as a musical and commercial entity meant that
-      some of PRES’s work was widely heard—I am thinking specifically of its
-      non-autonomous work for television and films. With this in mind, I am
-      curious about the contemporary interest in the Studio. Would you say this
-      is still a niche subject, pursued most actively by those with a pointed
-      interest in early electronic music of the Eastern Bloc? And, thinking more
-      specifically about the reception of your research, were you met with an
-      equally specialist audience?
+      home and the Studio rarely shared musical scores. Rudnik{" "}
+      <a href="https://post.at.moma.org/content_items/336-how-much-rudnik-is-in-penderecki-and-how-much-rudnik-is-in-nordheim-interview-with-eugeniusz-rudnik">
+        cites
+      </a>{" "}
+      special but poorly attended concerts in the basement of the National
+      Philharmonic. But of course, its dual role as a musical and commercial
+      entity meant that some of PRES’s work was widely heard—I am thinking
+      specifically of its non-autonomous work for television and films. With
+      this in mind, I am curious about the contemporary interest in the Studio.
+      Would you say this is still a niche subject, pursued most actively by
+      those with a pointed interest in early electronic music of the Eastern
+      Bloc? And, thinking more specifically about the reception of your
+      research, were you met with an equally specialist audience?
     </InterviewQuestion>
     <InterviewAnswer subject="MM">
       You could probably call it a niche, though it is one that cuts through
@@ -549,26 +669,36 @@ const JuliaGardenerProject = () => (
       referenced his work in their music.
     </InterviewAnswer>
     <InterviewQuestion>
-      To close, I wanted to turn to Bolesław Błaszczyk’s words, which
-      read—“Rescued from near-oblivion, PRES is finally becoming recognized for
-      its important contributions to European music and art. The galaxy proposed
-      below, just like the celestial galaxies, is still extending. There are
-      still more stars to discover.” Why do you think PRES stayed in the shadows
-      for so long? And what do you think has to happen so that it never recedes
-      back into them again?
+      To close, I wanted to turn to Bolesław Błaszczyk’s{" "}
+      <a href="https://post.at.moma.org/content_items/400-polish-radio-experimental-studio-a-galaxy-of-writings-prints-and-sound">
+        words
+      </a>
+      , which read—“Rescued from near-oblivion, PRES is finally becoming
+      recognized for its important contributions to European music and art. The
+      galaxy proposed below, just like the celestial galaxies, is still
+      extending. There are still more stars to discover.” Why do you think PRES
+      stayed in the shadows for so long? And what do you think has to happen so
+      that it never recedes back into them again?
     </InterviewQuestion>
     <InterviewAnswer subject="DM">
       The situation of other similar venues is not so different. The renaissance
-      of interest in the BBC Radiophonic Workshop or GRM is fairly recent.
-      Starting somewhere in the mid 2000s, revisiting the heritage of both of
-      these was easier with more records and releases and less significant
-      issues related to language barriers. Since then a lot of the work by Bôłt
-      Records, Muzeum Sztuki in Łódź, or Adam Mickiewicz Institute has been
+      of interest in the{" "}
+      <a href="https://www.bbc.co.uk/music/artists/39f0d457-37ba-43b9-b0a9-05214bae5d97">
+        BBC Radiophonic Workshop
+      </a>{" "}
+      or GRM is fairly recent. Starting somewhere in the mid 2000s, revisiting
+      the heritage of both of these was easier with more records and releases
+      and less significant issues related to language barriers. Since then a lot
+      of the work by Bôłt Records, Muzeum Sztuki in Łódź, or{" "}
+      <a href="https://iam.pl/en">Adam Mickiewicz Institute</a> has been
       invested in archiving, preserving, recontextualizing, and translating. At
       Muzeum Sztuki we are also collecting works that are connected with the
-      Studio and putting them online, creating a new space for the variety of
-      this production. It simply takes a bit longer for foreign researchers to
-      get involved with this material.
+      Studio and{" "}
+      <a href="https://zasoby.msl.org.pl/arts/show/0/23?sort_type=1">
+        putting them online
+      </a>
+      , creating a new space for the variety of this production. It simply takes
+      a bit longer for foreign researchers to get involved with this material.
     </InterviewAnswer>
     <InterviewAnswer subject="MM">
       I sympathize with Bolek Błaszyczyk’s sentiment. The truth is, though, that
@@ -577,13 +707,16 @@ const JuliaGardenerProject = () => (
       scholarship. And, more globally, with the interest in art practices that
       emerged in the former Eastern Europe under Communism. Even the basis for
       our collaboration, Daniel’s and mine, was a museum endeavor that speaks to
-      that growing interest: a global research program at MoMA, called C-MAP,
-      that the Museum started in 2010. And the amount of scholarship about PRES
-      that has been produced in the past years in Poland and abroad assures the
-      Studio’s history and cultural contributions are now universally
+      that growing interest: a global research program at MoMA, called{" "}
+      <a href="https://www.moma.org/research-and-learning/international-program/global-research">
+        C-MAP
+      </a>
+      , that the Museum started in 2010. And the amount of scholarship about
+      PRES that has been produced in the past years in Poland and abroad assures
+      the Studio’s history and cultural contributions are now universally
       recognized.
     </InterviewAnswer>
-    <p>
+    <Paragraph>
       Magdalena Moskalewicz, PhD, is an art historian, curator, and editor;
       Assistant Professor, Adjunct, at the School of the Art Institute of
       Chicago. Moskalewicz specializes in art of the 1950s, 60s, and 70s in the
@@ -597,35 +730,51 @@ const JuliaGardenerProject = () => (
       Modern Art in New York, where she conducted research and organized
       academic programs for the Eastern European branch of MoMA’s global
       program, C-MAP, and served as co-editor of the Museum’s digital publishing
-      platform, post. Her curatorial projects engage in collaborations with
-      living artists, examining the postsocialist condition and its parallels
-      with postcoloniality. Among others, Moskalewicz curated Halka/Haiti
-      18°48’05′′N 72°23’01′′W for the Polish Pavilion at the 56th Venice
-      Biennale (2015) and The Travellers: Voyage and Migration in New Art from
-      Central and Eastern Europe (2016–2018), both accompanied by books. Recent
-      scholarly writing includes contributions to The Oxford Handbook of
-      Communist Visual Cultures (Oxford University Press, 2020) and
-      Reconstructions, Restagings, Re- enactments: Exhibition Histories in the
-      Twenty-First Century (Routledge, forthcoming).
-    </p>
-    <p>
+      platform, <i>post</i>. Her curatorial projects engage in collaborations
+      with living artists, examining the postsocialist condition and its
+      parallels with postcoloniality. Among others, Moskalewicz curated
+      <i>Halka/Haiti 18°48’05′′N 72°23’01′′W</i> for the Polish Pavilion at the
+      56th Venice Biennale (2015) and{" "}
+      <i>
+        The Travellers: Voyage and Migration in New Art from Central and Eastern
+        Europe
+      </i>{" "}
+      (2016–2018), both accompanied by books. Recent scholarly writing includes
+      contributions to <i>The Oxford Handbook of Communist Visual Cultures</i>{" "}
+      (Oxford University Press, 2020) and{" "}
+      <i>
+        Reconstructions, Restagings, Re- enactments: Exhibition Histories in the
+        Twenty-First Century
+      </i>{" "}
+      (Routledge, forthcoming).
+    </Paragraph>
+    <Paragraph>
       Daniel Muzyczuk is Head of the Modern Art Department at Muzeum Sztuki in
-      Łódź, Poland. Curator of the exhibitions Gone to Croatan (with Robert
-      Rumas), CoCA Toruń / HMKV, Dortmund; Sounding the Body Electric:
-      Experiments in Art and Music in Eastern Europe 1957–1984 (with David
-      Crowley), Muzeum Sztuki, Łódź / Calvert 22, London; Notes from the
-      Underground: Art and Alternative Music in Eastern Europe 1968–1994 (with
-      David Crowley), Muzeum Sztuki, Łódź / Akademie der Künste, Berlin; The
-      Museum of Rhythm (with Natasha Ginwala), Muzeum Sztuki, Łódź; Through the
-      Soundproof Curtain: The Polish Radio Experimental Studio (with Michał
-      Mendyk), ZKM, Karlsruhe; among others. Co-curator of the Polish Pavilion
-      at the 55th Venice Biennale (with Agnieszka Pindera). Published texts in
-      The Exhibitionist, NERO, Mousse Magazine, and e-flux journal.
-      Vice-president of the International Association of Art Critics (AICA),
-      Poland. Recipient of Garage Museum of Contemporary Art Field Research
-      scholarship. Participated in the MoMA International Curatorial Institute,
-      New York, 2015. Member of Grupa Budapeszt.
-    </p>
+      Łódź, Poland. Curator of the exhibitions <i>Gone to Croatan</i> (with
+      Robert Rumas), CoCA Toruń / HMKV, Dortmund;{" "}
+      <i>
+        Sounding the Body Electric: Experiments in Art and Music in Eastern
+        Europe 1957–1984
+      </i>{" "}
+      (with David Crowley), Muzeum Sztuki, Łódź / Calvert 22, London;{" "}
+      <i>
+        Notes from the Underground: Art and Alternative Music in Eastern Europe
+        1968–1994
+      </i>
+      (with David Crowley), Muzeum Sztuki, Łódź / Akademie der Künste, Berlin;
+      <i>The Museum of Rhythm</i> (with Natasha Ginwala), Muzeum Sztuki, Łódź;
+      <i>
+        Through the Soundproof Curtain: The Polish Radio Experimental Studio
+      </i>{" "}
+      (with Michał Mendyk), ZKM, Karlsruhe; among others. Co-curator of the
+      Polish Pavilion at the 55th Venice Biennale (with Agnieszka Pindera).
+      Published texts in <i>The Exhibitionist</i>, <i>NERO</i>,{" "}
+      <i>Mousse Magazine</i>, and <i>e-flux journal</i>. Vice-president of the
+      International Association of Art Critics (AICA), Poland. Recipient of
+      Garage Museum of Contemporary Art Field Research scholarship. Participated
+      in the MoMA International Curatorial Institute, New York, 2015. Member of
+      Grupa Budapeszt.
+    </Paragraph>
   </Project>
 )
 

@@ -1,15 +1,15 @@
 import React from "react"
 
-import { interviewAnswer } from "./interview-answer.module.css"
+import styles from "./interview-answer.module.css"
 
 const InterviewAnswer = ({ children, subject }) =>
   subject ? (
-    <p className={interviewAnswer}>
-      <span className={subject}>{subject}: </span>
+    <p className={styles.interviewAnswer}>
+      <span className={styles.subject}>{subject}</span>
       {children}
     </p>
   ) : (
-    <p className={interviewAnswer}>{children}</p>
+    <p className={styles.interviewAnswer}>{children}</p>
   )
 
 export default InterviewAnswer

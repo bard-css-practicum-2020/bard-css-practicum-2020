@@ -1,4 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import { navigate } from "gatsby"
+import { useLocation } from "@reach/router"
+import queryString from "query-string"
 
 /* Import Global Containers */
 import Project from "~containers/project/project"
@@ -8,21 +11,42 @@ import EnglishContent from "./components/englishContent"
 import SpanishContent from "./components/spanishContent"
 
 const MariaCamilaMontalvoSeniorProject = () => {
-  const [language, setLanguage] = useState("EN")
+  const location = useLocation()
+  // get language from query string
+  const languageFromQueryString = queryString.parse(location.search).language
+  // if language is not `en` or `es`, default to english
+  const initialLanguage =
+    languageFromQueryString === "en" || languageFromQueryString === "es"
+      ? languageFromQueryString
+      : "en"
+  const [language, setLanguage] = useState(initialLanguage)
 
-  const handleClick = () => {
-    if (language === "EN") {
-      setLanguage("ES")
-    } else {
-      setLanguage("EN")
+  useEffect(() => {
+    if (language) {
+      // update url params
+      navigate(`?language=${language}`)
     }
-  }
+  }, [language])
 
   return (
     <Project title="Project Title" author="María Camila Montalvo Senior">
-      <button onClick={handleClick}>{language}</button>
-      {language === "EN" && <EnglishContent />}
-      {language === "ES" && <SpanishContent />}
+      <button
+        onClick={() => {
+          setLanguage("en")
+        }}
+      >
+        EN
+      </button>
+      <span>/</span>
+      <button
+        onClick={() => {
+          setLanguage("es")
+        }}
+      >
+        ES
+      </button>
+      {language === "en" && <EnglishContent />}
+      {language === "es" && <SpanishContent />}
     </Project>
   )
 }
