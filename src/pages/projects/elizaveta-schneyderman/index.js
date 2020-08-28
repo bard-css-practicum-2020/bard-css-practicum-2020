@@ -4,12 +4,13 @@ import React from "react"
 import Project from "~containers/project/project"
 
 /* Import Global Components */
+import Paragraph from "~components/paragraph/paragraph"
 import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 
-const JuliaGardenerProject = () => (
+const ElizavtaSchneydermanProject = () => (
   <Project title="Tung-Hui Hu Interview" author="Elizaveta Schneyderman">
-    <p>
+    <Paragraph>
       Radio, despite being the world’s most ubiquitous means of mass
       communication, exists as an unremarkable feature of everyday life—a
       product of its near-invisible infrastructure. It remains highly
@@ -20,8 +21,8 @@ const JuliaGardenerProject = () => (
       “radio” and its transmission get even muddier: the introduction of
       universally shared time—infinite liveness via constant streaming—has
       broadened what it means to be on the air, or “in-time,” with one another.
-    </p>
-    <p>
+    </Paragraph>
+    <Paragraph>
       I spoke with media scholar Tung-Hui Hu about radio and its oscillatory
       function in media history. We spoke about the territorial logic of radio,
       as well as more broadly on decentralized and mobile networks. Meandering
@@ -32,7 +33,7 @@ const JuliaGardenerProject = () => (
       communication. As our conversation shows, radio exists less as a distinct
       entity or category, and instead on a continuous spectrum of an evolving
       broadcast history.
-    </p>
+    </Paragraph>
     <InterviewQuestion interviewer="Elizaveta Shneyderman (ES)​">
       I​ want to start by thinking about the territorial logic of radio — of the
       “inside and outside” of its zones of logic. As a medium that has the
@@ -53,31 +54,31 @@ const JuliaGardenerProject = () => (
       I am no historian of radio, but one of the phrases that I like from its
       early days is “DX fishing,” which is the sport of making contact with a
       distant radio broadcaster (DX is shorthand for distant). As Jeffrey Sconce
-      writes in his book ​Haunted Media​, radio’s wireless spectrum around the
-      early twentieth-century was mostly empty, and so DX fishing imagined the
-      ether as a vast sea from which signals could be “fished” out. I love the
-      idea of hooking and plucking a single voice out of the ocean that’s still
-      live, thrashing. Because there were so few broadcasters, you had to go
-      very far to find someone else, leading, as Sconce tells us, even
+      writes in his book <i>​Haunted Media​</i>, radio’s wireless spectrum
+      around the early twentieth-century was mostly empty, and so DX fishing
+      imagined the ether as a vast sea from which signals could be “fished” out.
+      I love the idea of hooking and plucking a single voice out of the ocean
+      that’s still live, thrashing. Because there were so few broadcasters, you
+      had to go very far to find someone else, leading, as Sconce tells us, even
       Francophobic Americans to suddenly appreciate the transmissive potential
       of the Eiffel Tower. When the air eventually began to fill up with radio
       signals—when signals began to collide with each other—you had moments of
       interference and eventually government regulation. There’s a famous
-      example of interference during the last hours of the ​Titanic​, when its
-      radio operator radioed back to a neighboring ship warning them of ice:
-      “Keep out! Shut up! I am working.” The two spark gap transmitters on the
-      nearby ships couldn’t broadcast simultaneously without interfering with
-      each other. Or, as you put it, trespass on each other. For as the spectrum
-      becomes crowded, it becomes regulated by the state. And so some of the
-      interesting developments in radio and, eventually, broadcast history come
-      out of attempting to test the boundaries between local and distant: the
-      pirate television station Lanesville TV, [founded] by the Videofreex
-      [collective], which broadcasted hyper-local video content from a small
-      town in the Catskills, including a mockumentary about a UFO landing. Or
-      the guy behind the pirate radio station Radio Essex that took over and
-      broadcasted from an abandoned military platform in the North Sea, claiming
-      to be outside of UK territorial waters; his family eventually turned it
-      into a self-proclaimed kingdom, then a data haven.
+      example of interference during the last hours of the <i>​Titanic​</i>,
+      when its radio operator radioed back to a neighboring ship warning them of
+      ice: “Keep out! Shut up! I am working.” The two spark gap transmitters on
+      the nearby ships couldn’t broadcast simultaneously without interfering
+      with each other. Or, as you put it, trespass on each other. For as the
+      spectrum becomes crowded, it becomes regulated by the state. And so some
+      of the interesting developments in radio and, eventually, broadcast
+      history come out of attempting to test the boundaries between local and
+      distant: the pirate television station Lanesville TV, [founded] by the
+      Videofreex [collective], which broadcasted hyper-local video content from
+      a small town in the Catskills, including a mockumentary about a UFO
+      landing. Or the guy behind the pirate radio station Radio Essex that took
+      over and broadcasted from an abandoned military platform in the North Sea,
+      claiming to be outside of UK territorial waters; his family eventually
+      turned it into a self-proclaimed kingdom, then a data haven.
     </InterviewAnswer>
     <InterviewAnswer>
       I have made the argument before that much of the conflict and even
@@ -317,7 +318,7 @@ const JuliaGardenerProject = () => (
       blockchain/crypto-powered “smart contracts” that might decentralize
       government and automate freedom, thus building the network that the
       Internet never was. But as David Golumbia points out in a recent book,
-      ​The Politics of Bitcoin​, these ideals are not only fundamentally
+      <i>​The Politics of Bitcoin​</i>, these ideals are not only fundamentally
       libertarian, but even right-wing. What is lost in all these maps and
       theories is that the public (or the much-maligned “center”) is an
       old-fashioned, boring, even monolithic thing: highways, sewers, virus
@@ -368,10 +369,11 @@ const JuliaGardenerProject = () => (
       easier to throw it out—so the question for me is how one writes a history
       of noise, as Blake has done. This is where imagination comes in and where
       noise can be recuperative: where, to think of that amazing book of poetry
-      ​Zong​, M. NourbeSe Philip uses a moment when her printer jammed and
-      overprinted lines of verse on top of itself as the book’s last chapter,
-      much like the forcibly suppressed sounds of those who were murdered on the
-      ship Zong m​ ight have echoed and resounded through the ocean.
+      <i>​Zong​</i>, M. NourbeSe Philip uses a moment when her printer jammed
+      and overprinted lines of verse on top of itself as the book’s last
+      chapter, much like the forcibly suppressed sounds of those who were
+      murdered on the ship <i>Zong</i> m​ight have echoed and resounded through
+      the ocean.
     </InterviewAnswer>
     <InterviewAnswer>
       The question of shared space makes me think about how we so often have
@@ -386,10 +388,10 @@ const JuliaGardenerProject = () => (
       exponentially and we have less and less in common? How do we still inflect
       virtual spaces with markers of presence? This is where radio might
       continue to teach us. I think of that scene in the postapocalyptic
-      novel/film ​On the Beach,​ where the Morse code transmission of a distant
-      survivor from across the ocean is revealed to be simply a telegraph
-      machine connected to an open window shade blowing in the wind: noise is
-      (mis)read as signal, and accordingly, as hope.
+      novel/film <i>​On the Beach</i>,​ where the Morse code transmission of a
+      distant survivor from across the ocean is revealed to be simply a
+      telegraph machine connected to an open window shade blowing in the wind:
+      noise is (mis)read as signal, and accordingly, as hope.
     </InterviewAnswer>
     <InterviewQuestion interviewer="ES">
       One of the latent themes of this conversation has been the transformative
@@ -410,4 +412,4 @@ const JuliaGardenerProject = () => (
   </Project>
 )
 
-export default JuliaGardenerProject
+export default ElizavtaSchneydermanProject

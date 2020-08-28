@@ -24,7 +24,11 @@ const MuhebEsmatProject = () => (
   >
     <Paragraph>
       In Irvine, California, Wana Miskinyar presents{" "}
-      <a href="https://www.youtube.com/watch?v=ihkcbOUi16s&t=175s">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.youtube.com/watch?v=ihkcbOUi16s&t=175s"
+      >
         Wana's Show
       </a>{" "}
       from the colorful green-screen studio of Ariana Afghanistan International
@@ -300,7 +304,11 @@ const MuhebEsmatProject = () => (
         alt="Mariam's livestream on YouTube channel Funny 420"
       />
       <Caption>
-        <a href="https://www.youtube.com/watch?v=a6fZfs_30sg&t=80s">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.youtube.com/watch?v=a6fZfs_30sg&t=80s"
+        >
           Fig. 2. Screenshot of Mariam's livestream on YouTube channel Funny
           420.
         </a>

@@ -1,9 +1,3 @@
-import React from "react"
-
-const Index = () => (
-  <div>
-    <p>Index</p>
-  </div>
-)
+const Index = () => null
 
 export default Index
