@@ -1,18 +1,24 @@
 .footnote {
-    z-index: 0;
-    margin-right: 1ch;
-    margin-left: 0.5ch;
-    font-size: 12px;
-    color: var(--color-gray);
-    transition: opacity 0.15s;
+  z-index: 0;
+  margin-right: 1ch;
+  margin-left: 0.5ch;
+  font-size: 12px;
+  color: var(--color-gray);
+  transition: opacity 0.15s;
 }
 .footnote a {
-    text-decoration: none;
-    border: 1px solid var(--color-gray);
-    padding: 2px 4px;
-    border-radius: 2px;
+  text-decoration: none;
+  border: 1px solid var(--color-gray);
+  padding: 2px 4px;
+  border-radius: 2px;
 }
 
 .footnote:hover {
-    opacity: 0.7;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .footnote {
+    font-size: 10px;
+  }
 }
