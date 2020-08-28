@@ -56,9 +56,11 @@ a {
   border-bottom: 1px solid var(--color-gray);
   text-decoration: none;
   transition: border-bottom-color 0.3s;
+  cursor: ne-resize;
 }
 a:hover {
   border-bottom-color: var(--color-light-gray);
+  cursor: ne-resize;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
