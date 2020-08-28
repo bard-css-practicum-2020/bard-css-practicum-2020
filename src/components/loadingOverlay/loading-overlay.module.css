@@ -1,4 +1,5 @@
 .loading-overlay {
+  z-index: 2;
   opacity: 1;
   /* position */
   position: fixed;

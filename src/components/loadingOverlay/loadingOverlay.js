@@ -9,7 +9,7 @@ const LoadingOverlay = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoaded(true)
-    }, 3000)
+    }, 500)
     return () => {
       window.clearTimeout(timeout)
     }
@@ -20,17 +20,7 @@ const LoadingOverlay = () => {
       className={classnames(styles.loadingOverlay, {
         [styles.loaded]: isLoaded,
       })}
-    >
-      <p>•</p>
-      <p>•</p>
-      <p>•</p>
-      <p>•</p>
-      <p>•</p>
-      <p>•</p>
-      <p>•</p>
-      <p>•</p>
-      <p>•</p>
-    </div>
+    />
   )
 }
 export default LoadingOverlay
