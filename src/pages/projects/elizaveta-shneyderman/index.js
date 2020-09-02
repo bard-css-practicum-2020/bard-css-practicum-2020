@@ -8,8 +8,8 @@ import Paragraph from "~components/paragraph/paragraph"
 import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 
-const ElizavtaSchneydermanProject = () => (
-  <Project title="Tung-Hui Hu Interview" author="Elizaveta Schneyderman">
+const ElizavtaShneydermanProject = () => (
+  <Project title="Tung-Hui Hu Interview" author="Elizaveta Shneyderman">
     <Paragraph>
       Radio, despite being the world’s most ubiquitous means of mass
       communication, exists as an unremarkable feature of everyday life—a
@@ -412,4 +412,4 @@ const ElizavtaSchneydermanProject = () => (
   </Project>
 )
 
-export default ElizavtaSchneydermanProject
+export default ElizavtaShneydermanProject

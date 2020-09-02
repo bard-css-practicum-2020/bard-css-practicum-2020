@@ -3,9 +3,32 @@ import React from "react"
 /* Import Global Containers */
 import Project from "~containers/project/project"
 
+/* Import Global Components */
+import Paragraph from "~components/paragraph/paragraph"
+
+/* Import Local Assets */
+import TheJingleSrc from "./assets/the-jingle-mix-1.mp3"
+import TheJingleVtt from "file-loader!./assets/the-jingle.vtt"
+
 const BrookeNicholasProject = () => (
-  <Project title="Project Title" author="Brooke Nicholas">
-    <p>Brooke Nicholas Project</p>
+  <Project title="Jingling the Night Away" author="Brooke Nicholas">
+    <Paragraph>
+      The jingle is a form of advertising that remains relevant, persistent, and
+      effective despite the significant changes in media technology since its
+      inception. The jingle is a piece of music written for an advertisement
+      that exploits the use of repetition in music to propagate a brand. It
+      hinges on the creation of an “earworm,” a term coined by University of
+      Cincinnati marketing professor James Kellaris describing the experience of
+      replaying a repetitive song inside one’s head. This is to say, jingles
+      force the listener to reproduce the advertisement on their own by creating
+      something catchy and infectious. It is the primary goal of musical
+      advertising and jingles specifically to implant an earworm into a
+      listener.
+    </Paragraph>
+    <audio controls src={TheJingleSrc}>
+      <track default srclang="en" kind="captions" src={TheJingleVtt} />
+      Sorry, your browser doesn't support embedded audio.
+    </audio>
   </Project>
 )
 

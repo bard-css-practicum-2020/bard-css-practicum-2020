@@ -27,7 +27,7 @@ const Projects = () => (
     <li>
       <Project
         link="./brooke-nicholas"
-        title="Project Title"
+        title="Jingling the Night Away"
         author="Brooke Nicholas"
       />
     </li>
@@ -40,9 +40,9 @@ const Projects = () => (
     </li>
     <li>
       <Project
-        link="./elizaveta-schneyderman"
+        link="./elizaveta-shneyderman"
         title="Tung-Hui Hu Interview"
-        author="Elizaveta Schneyderman"
+        author="Elizaveta Shneyderman"
       />
     </li>
     <li>
