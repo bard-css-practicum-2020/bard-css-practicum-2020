@@ -28,9 +28,9 @@ const Layout = ({ children, location }) => (
   <Fragment>
     <SEO pathname={location.pathname} defer={false} />
     <LoadingOverlay />
-    {/* <Header /> */}
+    <Header />
     <div className={layoutClassName}>{children}</div>
-    {/* <Footer /> */}
+    <Footer />
   </Fragment>
 )
 

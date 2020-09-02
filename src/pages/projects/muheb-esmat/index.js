@@ -24,13 +24,15 @@ const MuhebEsmatProject = () => (
   >
     <Paragraph>
       In Irvine, California, Wana Miskinyar presents{" "}
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://www.youtube.com/watch?v=ihkcbOUi16s&t=175s"
-      >
-        Wana's Show
-      </a>{" "}
+      <i>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.youtube.com/watch?v=ihkcbOUi16s&t=175s"
+        >
+          Wana's Show
+        </a>
+      </i>{" "}
       from the colorful green-screen studio of Ariana Afghanistan International
       Television. Founded in 1989, the privately-owned television channel has
       been a source of news and entertainment for the Afghan diaspora in the
@@ -38,18 +40,18 @@ const MuhebEsmatProject = () => (
       channels that served as a tool for cultural education and community
       building in the Afghan diaspora before the prominence of social media.
       Wana's guest today is Mariam, famously known as Raees Mariam (which
-      literally translates to boss) by her followers on Facebook and Instagram.
-      In a twist of fate, the star of the old screen meets the star of the new.
-      Wana sits in an imagined green-screen studio, which adheres to the media
-      formalities of production and presentation that give her credibility and
-      status. On the other hand, Mariam presents her livestreams from the
-      comfort of her own home, with no formalities beyond the mundane setting of
-      everyday life. And yet, with the help of social media, she has effectively
-      played a major role in the formulation of a new cultural moment in recent
-      Afghan history. A moment in which livestreams have not only become a space
-      for connection across physical and cultural barriers, but also the source
-      for creating the ultimate form of reality television in the age of the
-      internet.
+      literally translates to <i>boss</i>) by her followers on Facebook and
+      Instagram. In a twist of fate, the star of the old screen meets the star
+      of the new. Wana sits in an imagined green-screen studio, which adheres to
+      the media formalities of production and presentation that give her
+      credibility and status. On the other hand, Mariam presents her livestreams
+      from the comfort of her own home, with no formalities beyond the mundane
+      setting of everyday life. And yet, with the help of social media, she has
+      effectively played a major role in the formulation of a new cultural
+      moment in recent Afghan history. A moment in which livestreams have not
+      only become a space for connection across physical and cultural barriers,
+      but also the source for creating the ultimate form of reality television
+      in the age of the internet.
     </Paragraph>
     <Paragraph>
       The interview is unsettlingly condescending, as a mix of generational and
@@ -63,8 +65,8 @@ const MuhebEsmatProject = () => (
       have used the platform to transcend boundaries in real-time and form what
       I believe has become a dominant part of the Afghan virtual cultural
       sphere. Responding to Wana’s question about how she became famous on
-      Facebook, Mariam humbly professes “not knowing how and is unable to point
-      out to a singular reason.” She claims that it is her realness and
+      Facebook, Mariam humbly professes to not knowing how and is unable to
+      point out to a singular reason. She claims that it is her realness and
       persistence in not compromising her beliefs in the face of societal
       pressure towards women that draws people. Whatever the cause might be,
       what is true is that Mariam and her peers have ushered in a new era of
@@ -215,8 +217,8 @@ const MuhebEsmatProject = () => (
       years Mariam has come to use her platform to advocate for her rights as a
       woman and everyone’s right to choose the life they want to live and fight
       against the strict religious and traditional structures that do not allow
-      for those choices in Afghan culture. This courageous act that has made her
-      the direct target of both men and women, who bombard her with sexist and
+      for those choices in Afghan culture. This courageous act has made her the
+      direct target of both men and women, who bombard her with sexist and
       misogynist comments, from calling her vulgar insults such as “whore” and
       “infidel,” to death threats.{" "}
     </Paragraph>
@@ -267,10 +269,10 @@ const MuhebEsmatProject = () => (
       are shadowed by abandonment, withdrawal, and insecurity both inside
       Afghanistan and among its growing diaspora. This serves as an integral
       tool in linking together a fragmented community born out of a war that has
-      now lasted for more than four decades. To the Afghans residing abroad, the
-      virtual community provides what their local foreign environment lacks,
+      now lasted for more than four decades. To some Afghans residing abroad,
+      the virtual community provides what their local foreign environment lacks,
       where a big part of one’s identity is relegated to small communities of
-      Afghan family and friends. Simultaneously, to the Afghans inside the
+      Afghan family and friends. Simultaneously, to some Afghans inside the
       country, the virtual sphere provides them with an Afghan society that
       often cannot be found inside the country, due to the strict cultural and
       religious codes that heavily emphasize a divide between private and
@@ -324,11 +326,11 @@ const MuhebEsmatProject = () => (
       livestreams enter a second life once that “end” button is pushed on the
       screen. Recorded by fans and some of the online personalities themselves,
       these conversations are then reuploaded to a growing number of Facebook,
-      Instagram, and YouTube pages. It is in this transition from social media
-      account to YouTube that these livestreams are then spread far and wide,
-      garnering from thousands to even millions of views and in the process
-      becoming part of a new wave of media production that is taking place on
-      YouTube.{" "}
+      Instagram, and YouTube pages. It is in this transition from their personal
+      social media account to YouTube that these livestreams are then spread far
+      and wide, garnering from thousands to even millions of views and in the
+      process becoming part of a new wave of media production that is taking
+      place on YouTube.{" "}
     </Paragraph>
     <Paragraph>
       For years now, Mariam’s livestreams have been relentlessly intimate and
@@ -347,12 +349,12 @@ const MuhebEsmatProject = () => (
     </Paragraph>
     <Paragraph>
       In recent decades, reality TV has occupied an important place globally in
-      contemporary television culture. In their book, Understanding Reality
-      Television, Su Holmes and Deborah Jermyn write that some “early attempts
-      to define reality TV emphasized the importance of a focus on ‘real-life’
-      and ‘real people’ as the crucial criteria, as well as the technological
-      forms through which the subject matter was mediated (such as the video
-      camcorder).”
+      contemporary television culture. In their book,{" "}
+      <i>Understanding Reality Television</i>, Su Holmes and Deborah Jermyn
+      write that some “early attempts to define reality TV emphasized the
+      importance of a focus on ‘real-life’ and ‘real people’ as the crucial
+      criteria, as well as the technological forms through which the subject
+      matter was mediated (such as the video camcorder).”
       <Footnote number={7} href="#reference-5" /> The genre has expanded
       drastically in recent decades and includes a wide range of examples that
       go from talk shows to talent and game shows, courtrooms, reality soap
@@ -362,20 +364,20 @@ const MuhebEsmatProject = () => (
       factor in the genre's appeal and success is the ideology of the “real”
       that serves as an anchor to all forms that have evolved from it. In the
       past two decades, Afghan television viewers have been witness to several
-      reality-based shows that include: Afghan Star (a talent show based on
-      American Idol), a local adaptation of The Voice, Who Wants to Be a
-      Millionaire, Khanda Bazar (similar to Afghan Star but solely for
-      comedians), and cop shows that mix real footage with reenacted scenes and
-      many more.{" "}
+      reality-based shows that include: <i>Afghan Star</i> (a talent show based
+      on American Idol), a local adaptation of <i>The Voice</i>,{" "}
+      <i>Who Wants to Be a Millionaire</i>, <i>Khanda Bazar</i> (similar to
+      <i>Afghan Star</i> but solely for comedians), and cop shows that mix real
+      footage with reenacted scenes and many more.{" "}
     </Paragraph>
     <Paragraph>
-      Coming back to the interview on Wana’s Show, Wana asks Mariam whether her
-      online self is her real character or if she acts this way for publicity,
-      to which Mariam responds “how she appears on livestreams is my real
-      personality.” She further explains that she sees no need to play a role
-      and to appear in a different character in the eyes of the people watching
-      her online. The claim of Mariam and her peers to the “real” is also
-      supported by the fact that they were regular citizens and not actors
+      Coming back to the interview on <i>Wana’s Show</i>, Wana asks Mariam
+      whether her online self is her real character or if she acts this way for
+      publicity, to which Mariam responds “how I appear on livestreams is my
+      real personality.” She further explains that she sees no need to play a
+      role and to appear in a different character in the eyes of the people
+      watching her online. The claim of Mariam and her peers to the “real” is
+      also supported by the fact that they were regular citizens and not actors
       before their eventual social media stardom. The rhetoric of “real” is
       further solidified with the “Live” stamp at the top left corner and the
       visual structure of split screens that we have come to associate with
@@ -534,7 +536,9 @@ const MuhebEsmatProject = () => (
       </BibliographyItem>
       <BibliographyItem id="reference-1">
         <i>BBC News</i>, “Taleban ‘Outlaw Internet,’” July 13, 2001.
-        news.bbc.co.uk/2/hi/south_asia/1437852.stm.
+        <span style={{ whiteSpace: "nowrap" }}>
+          news.bbc.co.uk/2/hi/south_asia/1437852.stm.
+        </span>
         <Footnote number={1} href="#footnote-1" />
         <Footnote number={2} href="#footnote-2" />
       </BibliographyItem>
