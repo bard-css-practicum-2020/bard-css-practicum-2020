@@ -1,6 +1,7 @@
 import React from "react"
 
 /* Import Local Components */
+import Page from "./components/page"
 import Project from "./components/project"
 
 /* Import Local Styles */
@@ -10,6 +11,9 @@ import styles from "./projects.module.css"
 
 const Projects = () => (
   <ul className={styles.projects}>
+    <li>
+      <Page link="/about" title="About" author="" />
+    </li>
     <li>
       <Project
         link="./muheb-esmat"
@@ -51,6 +55,9 @@ const Projects = () => (
         title="Project Title"
         author="Rachel Steinberg"
       />
+    </li>
+    <li>
+      <Page link="/colophon" title="Colophon" author="" />
     </li>
   </ul>
 )

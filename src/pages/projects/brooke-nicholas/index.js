@@ -5,6 +5,7 @@ import Project from "~containers/project/project"
 
 /* Import Global Components */
 import Paragraph from "~components/paragraph/paragraph"
+import Audio from "~components/audio/audio"
 
 /* Import Local Assets */
 import TheJingleSrc from "./assets/the-jingle-mix-1.mp3"
@@ -25,10 +26,7 @@ const BrookeNicholasProject = () => (
       advertising and jingles specifically to implant an earworm into a
       listener.
     </Paragraph>
-    <audio controls src={TheJingleSrc}>
-      <track default srclang="en" kind="captions" src={TheJingleVtt} />
-      Sorry, your browser doesn't support embedded audio.
-    </audio>
+    <Audio src={TheJingleSrc} vtt={TheJingleVtt} />
   </Project>
 )
 
