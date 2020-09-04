@@ -1,0 +1,19 @@
+.background-images {
+    flex: 1;
+}
+
+.background-images.loaded {
+    opacity: 0.6;
+}
+
+.background-images img {
+    position: fixed;
+    top: 50vh;
+    height: 50vh;
+}
+
+.background-images img:first-child {
+    position: fixed;
+    top: 0;
+    height: 50vh;
+}

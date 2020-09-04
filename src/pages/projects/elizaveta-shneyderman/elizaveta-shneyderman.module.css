@@ -1,3 +1,5 @@
-.project {
+.content {
+    display: flex;
+    flex-direction: row;
     max-width: 60ch;
 }

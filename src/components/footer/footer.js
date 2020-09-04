@@ -1,5 +1,8 @@
 import React from "react"
 
-const Footer = () => <footer>Footer</footer>
+/* Import Local Styles */
+import styles from "./footer.module.css"
+
+const Footer = () => <footer className={styles.footer}>●</footer>
 
 export default Footer
