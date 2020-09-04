@@ -17,10 +17,14 @@ import BibliographyItem from "~components/bibliography/bibliographyItem"
 import GeneralMiaAndMariamSrc from "./assets/General-Mia-and-Mariam.jpg"
 import Maryam3Src from "./assets/maryam-3.jpg"
 
+/* Import Local Styles */
+import styles from "./muheb-esmat.module.css"
+
 const MuhebEsmatProject = () => (
   <Project
     title="Generation Livestream and Virtual Afghan Sphere"
     author="Muheb Esmat"
+    className={styles.project}
   >
     <Paragraph>
       In Irvine, California, Wana Miskinyar presents{" "}

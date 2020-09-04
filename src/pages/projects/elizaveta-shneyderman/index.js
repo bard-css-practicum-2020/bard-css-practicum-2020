@@ -446,7 +446,6 @@ const ElizavtaShneydermanProject = () => (
         </InterviewQuestion>
         <InterviewQuestion>A lot left to learn indeed!</InterviewQuestion>
       </div>
-      <BackgroundImages />
     </div>
   </Project>
 )

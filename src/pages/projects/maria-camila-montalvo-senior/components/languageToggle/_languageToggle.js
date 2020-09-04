@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import classnames from "classnames"
 
 /* Import Local Context */
-import LanguageContext from "../../context/language"
+import LanguageContext from "../../context/_language"
 
 /* Import Local Styles */
 import styles from "./language-toggle.module.css"

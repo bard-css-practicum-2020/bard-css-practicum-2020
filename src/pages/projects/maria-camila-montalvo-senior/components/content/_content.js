@@ -1,11 +1,11 @@
 import React, { useContext } from "react"
 
 /* Import Local Contexts */
-import LanguageContext from "../../context/language"
+import LanguageContext from "../../context/_language"
 
 /* Import Local Components */
-import EnglishContent from "./englishContent"
-import SpanishContent from "./spanishContent"
+import EnglishContent from "./_englishContent"
+import SpanishContent from "./_spanishContent"
 
 const Content = () => {
   const [language] = useContext(LanguageContext)

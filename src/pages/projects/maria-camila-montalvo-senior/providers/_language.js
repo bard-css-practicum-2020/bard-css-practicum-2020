@@ -3,7 +3,7 @@ import { useLocation } from "@reach/router"
 import queryString from "query-string"
 
 /* Import Local Contexts */
-import LanguageContext from "../context/language"
+import LanguageContext from "../context/_language"
 
 const setInitialLanguage = location => {
   // get language from query string
