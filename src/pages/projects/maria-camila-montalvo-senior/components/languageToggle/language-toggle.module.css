@@ -1,0 +1,36 @@
+.language-toggles {
+    display: none; /* hide on desktop*/
+}
+
+.language-toggle {
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    margin: 1rem 0.5ch;
+    color: var(--color-gray);
+    border: 1px solid var(--color-light-gray);
+    border-radius: 4px;
+    transition: border-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.language-toggle:first-of-type {
+    margin-left: 0;
+}
+
+.language-toggle:hover {
+    color: var(--color-gray);
+    border-color: var(--color-gray);
+}
+
+.language-toggle.active {
+    color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+/* Hide on Desktop */
+@media (max-width: 768px) {
+    .language-toggles {
+        display: inherit;
+    }
+}

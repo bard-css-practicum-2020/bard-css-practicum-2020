@@ -1,4 +1,5 @@
 import React from "react"
+import classnames from "classnames"
 
 /* Import Global Components */
 import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
@@ -6,13 +7,15 @@ import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 import Image from "~components/image/image"
 
 /* Import Local Assets */
-import LovingSuitsSrc from "../assets/1-loving-suits.jpg"
-import OrdenamientoSilvestreSrc from "../assets/2-ordenamiento-silvestre.jpg"
-import AnticonquistaCafeSrc from "../assets/3-anticonquista-cafe.jpg"
-import ThisIsWeirdWithoutYouSrc from "../assets/4-this-is-weird-without-you.jpg"
+import LovingSuitsSrc from "../../assets/1-loving-suits.jpg"
+import OrdenamientoSilvestreSrc from "../../assets/2-ordenamiento-silvestre.jpg"
+import AnticonquistaCafeSrc from "../../assets/3-anticonquista-cafe.jpg"
+import ThisIsWeirdWithoutYouSrc from "../../assets/4-this-is-weird-without-you.jpg"
 
-const SpanishContent = () => (
-  <div>
+import styles from "./content.module.css"
+
+const SpanishContent = ({ active }) => (
+  <div className={classnames(styles.content, { [styles.active]: active })}>
     <p>
       Entrevista de María Camila Montalvo Senior a Colectivo SHE,{" "}
       <a

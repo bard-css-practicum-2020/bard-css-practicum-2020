@@ -8,8 +8,15 @@ import Paragraph from "~components/paragraph/paragraph"
 import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 
+/* Import Local Styles */
+import styles from "./elizaveta-shneyderman.module.css"
+
 const ElizavtaShneydermanProject = () => (
-  <Project title="Tung-Hui Hu Interview" author="Elizaveta Shneyderman">
+  <Project
+    title="Tung-Hui Hu Interview"
+    author="Elizaveta Shneyderman"
+    className={styles.project}
+  >
     <Paragraph>
       Radio, despite being the world’s most ubiquitous means of mass
       communication, exists as an unremarkable feature of everyday life—a

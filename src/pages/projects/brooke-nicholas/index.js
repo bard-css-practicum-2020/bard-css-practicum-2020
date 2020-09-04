@@ -11,8 +11,15 @@ import Audio from "~components/audio/audio"
 import TheJingleSrc from "./assets/the-jingle-mix-1.mp3"
 import TheJingleVtt from "file-loader!./assets/the-jingle.vtt"
 
+/* Import Local Styles */
+import styles from "./brooke-nicholas.module.css"
+
 const BrookeNicholasProject = () => (
-  <Project title="Jingling the Night Away" author="Brooke Nicholas">
+  <Project
+    title="Jingling the Night Away"
+    author="Brooke Nicholas"
+    className={styles.project}
+  >
     <Paragraph>
       The jingle is a form of advertising that remains relevant, persistent, and
       effective despite the significant changes in media technology since its

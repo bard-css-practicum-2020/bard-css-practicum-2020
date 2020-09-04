@@ -8,10 +8,14 @@ import Paragraph from "~components/paragraph/paragraph"
 import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 
+/* Import Local Styles */
+import styles from "./julia-gardener.module.css"
+
 const JuliaGardenerProject = () => (
   <Project
     title="PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk"
     author="Julia Gardener"
+    className={styles.project}
   >
     <Paragraph>
       This interview with{" "}

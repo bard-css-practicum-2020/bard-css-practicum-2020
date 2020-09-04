@@ -1,0 +1,27 @@
+.content {
+    max-width: 60ch;
+    display: block;
+}
+
+.content:first-of-type {
+    margin-right: 1rem;
+}
+
+.content.active {
+    display: block;
+}
+
+/* Two-Columns on Desktop */
+@media (max-width: 768px) {
+    .content {
+        display: none;
+    }
+
+    .content:first-of-type {
+        margin-right: auto;
+    }
+
+    .content.active {
+        display: block;
+    }
+}
