@@ -22,7 +22,10 @@ const Footer = ({ location }) => {
     <footer className={styles.footer}>
       <div className={styles.isLive}>
         <p>
-          <LiveDot /> {location.pathname}
+          <LiveDot />{" "}
+          {location.pathname === "/"
+            ? `/archive/elizaveta-shneyderman`
+            : location.pathname}
         </p>
       </div>
       <div className={styles.unix}>
