@@ -7,15 +7,15 @@ import UnixTime from "~components/unixTime/unixTime"
 /* Import Local Styles */
 import styles from "./footer.module.css"
 
-const pathnameToProjectMap = {
-  "/": {
-    title: "PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk",
-  },
-  "/projects/julia-gardener/": {
-    title: "PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk",
-    author: "Julia Gardener",
-  },
-}
+// const pathnameToProjectMap = {
+//   "/": {
+//     title: "PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk",
+//   },
+//   "/projects/julia-gardener/": {
+//     title: "PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk",
+//     author: "Julia Gardener",
+//   },
+// }
 
 const Footer = ({ location }) => {
   return (

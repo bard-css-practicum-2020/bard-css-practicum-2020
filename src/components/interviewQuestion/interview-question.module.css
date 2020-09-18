@@ -6,9 +6,13 @@
 .interview-question span.interviewer {
   font-family: "Authentic Sans";
   font-weight: normal;
-  background-color: var(--color-gray);
-  color: var(--color-white);
-  padding: 4px 8px;
+  font-size: 0.9rem;
+  color: var(--color-black);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-light-gray);
+  padding: 1px 8px;
+  padding-top: 4px;
   border-radius: 4px;
   margin-right: 1ch;
 }

@@ -1,0 +1,46 @@
+.audio {
+}
+
+.audio .title {
+  text-transform: uppercase;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.player button {
+  padding: 0.15rem 1rem;
+  margin: 0;
+  margin-right: 1rem;
+  background: none;
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1rem;
+  border-color: var(--color-light-gray);
+  transition: border-color 0.5s;
+  cursor: pointer;
+}
+
+.player button:hover {
+  border-color: var(--color-gray);
+}
+
+.player p {
+  padding: 0.15rem 1rem;
+  margin: 0;
+  margin-right: 1rem;
+  background: none;
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1rem;
+  border-color: var(--color-light-gray);
+}

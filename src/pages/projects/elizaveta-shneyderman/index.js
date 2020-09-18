@@ -9,7 +9,7 @@ import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 
 /* Import Local Components */
-import BackgroundImages from "./components/backgroundImages/backgroundImages"
+// import BackgroundImages from "./components/backgroundImages/backgroundImages"
 
 /* Import Local Styles */
 import styles from "./elizaveta-shneyderman.module.css"

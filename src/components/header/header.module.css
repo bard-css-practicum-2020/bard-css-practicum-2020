@@ -1,14 +1,21 @@
 header.header {
-    margin: 1.4rem;
-    padding: 1.4rem;
-    background-color: var(--color-white);
+  margin: 1.4rem;
+  padding: 1.4rem;
+  background-color: var(--color-white);
 }
 
 header a {
-    border-bottom: none;
-    text-decoration: none;
+  border-bottom: none;
+  text-decoration: none;
 }
 
 header ul {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  header.header {
+    margin: 1.4rem;
+    padding: 0rem;
+  }
 }

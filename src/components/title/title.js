@@ -4,7 +4,7 @@ import classnames from "classnames"
 import { title } from "./title.module.css"
 
 const Title = ({ children }) => (
-  <h1 className={classnames(title, "h2")}>{children}</h1>
+  <h1 className={classnames(title, "h3")}>{children}</h1>
 )
 
 export default Title

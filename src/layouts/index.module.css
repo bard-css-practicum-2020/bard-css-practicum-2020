@@ -1,4 +1,11 @@
 .layout {
+  margin: 1.4rem;
+  padding: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
     margin: 1.4rem;
-    padding: 1.4rem;
+    padding: 0rem;
+  }
 }

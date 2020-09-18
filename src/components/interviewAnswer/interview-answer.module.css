@@ -2,9 +2,13 @@
 }
 
 .interview-answer .subject {
-  background-color: var(--color-gray);
-  color: var(--color-white);
-  padding: 4px 8px;
+  color: var(--color-black);
+  font-size: 0.9rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-light-gray);
+  padding: 1px 8px;
+  padding-top: 4px;
   border-radius: 4px;
   margin-right: 1ch;
 }

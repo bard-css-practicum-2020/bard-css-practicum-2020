@@ -1,5 +1,11 @@
 import React, { useState, useEffect, useRef } from "react"
 
+/* Import Global Components*/
+import LiveDot from "~components/liveDot/liveDot"
+
+/* Import Local Styles */
+import styles from "./audio.module.css"
+
 const Audio = ({ src, vtt }) => {
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
@@ -12,6 +18,7 @@ const Audio = ({ src, vtt }) => {
       audioElementRef.current.addEventListener("canplay", handleCanPlay)
       audioElementRef.current.addEventListener("play", handlePlay)
       audioElementRef.current.addEventListener("paused", handlePause)
+      audioElementRef.current.addEventListener("pause", handlePause)
       audioElementRef.current.addEventListener("ended", handleEnded)
       audioElementRef.current.addEventListener("durationchange", handleDuration)
       audioElementRef.current.addEventListener("timeupdate", handleTimeUpdate)
@@ -59,23 +66,34 @@ const Audio = ({ src, vtt }) => {
   }
 
   return (
-    <>
+    <div className={styles.audio}>
       <audio src={src} ref={audioElementRef}>
         <track default srcLang="en" kind="captions" src={vtt} />
         Sorry, your browser doesn't support embedded audio.
       </audio>
-      <div>
-        <p>{isPlaying ? "Playing" : "Paused"}</p>
-        <p>
-          Current Time: {currentTime} / {duration}
-        </p>
+      <div class={styles.song}>
+        <p class={styles.title}>Jingling the Night Away</p>
+        <p>by Evan Backer</p>
+      </div>
+      <p></p>
+      <div className={styles.player}>
         {isPlaying ? (
           <button onClick={pause}>Pause</button>
         ) : (
           <button onClick={play}>Play</button>
         )}
+        <p>
+          <span>
+            {isPlaying ? (
+              <LiveDot ignoreContext={true} initialState={true} />
+            ) : (
+              <LiveDot ignoreContext={true} initialState={false} />
+            )}{" "}
+          </span>{" "}
+          {currentTime} / {duration}
+        </p>
       </div>
-    </>
+    </div>
   )
 }
 
