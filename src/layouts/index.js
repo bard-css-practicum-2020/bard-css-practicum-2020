@@ -1,4 +1,7 @@
-import React, { Fragment } from "react"
+import React from "react"
+
+/* Import Global Providers */
+import IsLiveProvider from "~providers/isLive"
 
 /* Import Global Components */
 import SEO from "~components/seo/seo"
@@ -22,16 +25,16 @@ import "./gridlover.css"
 import "./index.css"
 
 /* Import Local Styles */
-import { layoutClassName } from "./index.module.css"
+import styles from "./index.module.css"
 
 const Layout = ({ children, location }) => (
-  <Fragment>
+  <IsLiveProvider location={location}>
     <SEO pathname={location.pathname} defer={false} />
     <LoadingOverlay />
-    {/* <Header /> */}
-    <div className={layoutClassName}>{children}</div>
-    {/* <Footer /> */}
-  </Fragment>
+    <Header />
+    <div className={styles.layout}>{children}</div>
+    <Footer location={location} />
+  </IsLiveProvider>
 )
 
 export default Layout

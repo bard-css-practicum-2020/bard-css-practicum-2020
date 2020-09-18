@@ -16,42 +16,42 @@ const Projects = () => (
     </li>
     <li>
       <Project
-        link="./muheb-esmat"
+        link="/projects/muheb-esmat"
         title="Generation Livestream and Virtual Afghan Sphere"
         author="Muheb Esmat"
       />
     </li>
     <li>
       <Project
-        link="./julia-gardener"
+        link="/projects/julia-gardener"
         title="PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk"
         author="Julia Gardener"
       />
     </li>
     <li>
       <Project
-        link="./brooke-nicholas"
+        link="/projects/brooke-nicholas"
         title="Jingling the Night Away"
         author="Brooke Nicholas"
       />
     </li>
     <li>
       <Project
-        link="./maria-camila-montalvo-senior"
+        link="/projects/maria-camila-montalvo-senior"
         title="Interview with SHE Collective"
         author="María Camila Montalvo Senior"
       />
     </li>
     <li>
       <Project
-        link="./elizaveta-shneyderman"
+        link="/projects/elizaveta-shneyderman"
         title="Tung-Hui Hu Interview"
         author="Elizaveta Shneyderman"
       />
     </li>
     <li>
       <Project
-        link="./rachel-steinberg"
+        link="/projects/rachel-steinberg"
         title="Project Title"
         author="Rachel Steinberg"
       />

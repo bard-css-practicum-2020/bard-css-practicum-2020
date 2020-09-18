@@ -69,8 +69,11 @@ const Audio = ({ src, vtt }) => {
         <p>
           Current Time: {currentTime} / {duration}
         </p>
-        <button onClick={play}>Play</button>
-        <button onClick={pause}>Pause</button>
+        {isPlaying ? (
+          <button onClick={pause}>Pause</button>
+        ) : (
+          <button onClick={play}>Play</button>
+        )}
       </div>
     </>
   )
