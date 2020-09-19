@@ -12,8 +12,6 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  /* color */
-  background-color: var(--color-white);
 }
 
 .footer .is-live {

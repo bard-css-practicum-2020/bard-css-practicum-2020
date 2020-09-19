@@ -1,0 +1,12 @@
+.timeline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--color-gray);
+}
+
+.timeline.is-live {
+    background-color: var(--color-red);
+}

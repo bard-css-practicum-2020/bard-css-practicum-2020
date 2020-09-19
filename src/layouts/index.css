@@ -1,12 +1,13 @@
 /* Global CSS variables*/
 :root {
-  --color-white: #ffffff;
-  --color-light-gray: #d5d5d5;
-  --color-gray: #777777;
-  --color-black: #000000;
+  --color-white: #f9f9f9;
+  --color-light-gray: #e5e5e5;
+  --color-gray: #606060;
+  --color-black: #161616;
   --color-red: red;
 }
 
 body {
   font-family: "Authentic Sans";
+  background-color: var(--color-white);
 }

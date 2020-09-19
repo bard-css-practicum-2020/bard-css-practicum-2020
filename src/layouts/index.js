@@ -8,6 +8,7 @@ import SEO from "~components/seo/seo"
 import LoadingOverlay from "~components/loadingOverlay/loadingOverlay"
 import Header from "~components/header/header"
 import Footer from "~components/footer/footer"
+import Timeline from "~components/timeline/timeline"
 
 /* Import Global Normalize*/
 import "normalize.css"
@@ -31,6 +32,7 @@ const Layout = ({ children, location }) => (
   <IsLiveProvider location={location}>
     <SEO pathname={location.pathname} defer={false} />
     <LoadingOverlay />
+    <Timeline />
     <Header />
     <div className={styles.layout}>{children}</div>
     <Footer location={location} />

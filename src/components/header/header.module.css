@@ -1,7 +1,7 @@
 header.header {
+  position: relative;
   margin: 1.4rem;
   padding: 1.4rem;
-  background-color: var(--color-white);
 }
 
 header a {
@@ -11,6 +11,27 @@ header a {
 
 header ul {
   margin-bottom: 0;
+}
+
+header .flags {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header .flags img {
+  height: 1.4rem;
+}
+
+header .flags img:first-of-type {
+  padding-right: 1ch;
+}
+
+header .flags p {
+  margin-right: 1ch;
 }
 
 @media (max-width: 768px) {
