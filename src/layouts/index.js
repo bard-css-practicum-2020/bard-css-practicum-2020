@@ -33,9 +33,11 @@ const Layout = ({ children, location }) => (
     <SEO pathname={location.pathname} defer={false} />
     <LoadingOverlay />
     <Timeline />
-    <Header />
-    <div className={styles.layout}>{children}</div>
-    <Footer location={location} />
+    <div className={styles.layoutWrapper}>
+      <Header />
+      <main className={styles.layout}>{children}</main>
+      <Footer location={location} />
+    </div>
   </IsLiveProvider>
 )
 

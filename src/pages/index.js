@@ -6,8 +6,31 @@ import styles from "./index.module.css"
 // TODO: Add Timer to Return to Follow, or Click on 'Live' Functionality
 
 const Index = () => {
-  // const [followText, setFollowText] = useState(true)
+  let [timeInactive, setTimeInactive] = useState(0)
   let followText = useRef(true)
+
+  // if no interaction for more than 10 seonds,
+  // begin following text again
+  useEffect(() => {
+    if (timeInactive > 10) {
+      followText.current = true
+    }
+    const handleScroll = () => {
+      setTimeInactive(0)
+    }
+    const timer = window.setTimeout(() => {
+      setTimeInactive(timeInactive => timeInactive + 1)
+    }, 1000)
+    // set up mouse and trackpad listeners
+    window.addEventListener("mousewheel", handleScroll)
+    window.addEventListener("DOMMouseScroll", handleScroll)
+    // Clear timeout if the component is unmounted
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener("mousewheel", handleScroll)
+      window.removeEventListener("DOMMouseScroll", handleScroll)
+    }
+  }, [timeInactive])
 
   useEffect(() => {
     // followText.current = true
@@ -31,7 +54,11 @@ const Index = () => {
           <OnChar
             fn={() => {
               if (followText.current) {
-                window.scrollTo(0, document.body.scrollHeight)
+                window.scrollTo({
+                  left: 0,
+                  top: document.body.scrollHeight,
+                  behavior: "smooth",
+                })
               }
             }}
           >
