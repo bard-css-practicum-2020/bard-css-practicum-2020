@@ -31,7 +31,7 @@ const Header = () => {
       </ul>
       <div className={styles.flags}>
         <img src={MinusFourFlagSrc} alt="Minus Four" />
-        <p> </p>
+        <p>-</p>
         <img src={MinusFourFlagSrc} alt="Minus Four" />
       </div>
     </header>
