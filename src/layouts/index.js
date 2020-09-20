@@ -5,6 +5,7 @@ import IsLiveProvider from "~providers/isLive"
 
 /* Import Global Components */
 import SEO from "~components/seo/seo"
+import Background from "~components/background/background"
 import Screensaver from "~components/screensaver/screensaver"
 import LoadingOverlay from "~components/loadingOverlay/loadingOverlay"
 import Header from "~components/header/header"
@@ -33,6 +34,7 @@ const Layout = ({ children, location }) => (
   <IsLiveProvider location={location}>
     <SEO pathname={location.pathname} defer={false} />
     <LoadingOverlay />
+    <Background />
     <Screensaver />
     <Timeline />
     <div className={styles.layoutWrapper}>

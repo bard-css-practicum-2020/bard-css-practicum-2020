@@ -31,6 +31,12 @@ const About = ({ data }) => {
         mollit anim id est laborum.
       </Paragraph>
       <Paragraph>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+      </Paragraph>
+      <Paragraph>
         Last Updated {data.gitCommit.date}
         <br />
         Commit *{data.gitCommit.hash.slice(-7)}

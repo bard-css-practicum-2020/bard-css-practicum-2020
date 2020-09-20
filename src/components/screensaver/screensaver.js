@@ -1,29 +1,68 @@
 import React, { useState, useEffect, useContext } from "react"
 import classnames from "classnames"
+import random from "lodash.random"
+import shortid from "shortid"
 
 import IsLiveContext from "~context/isLive"
 
 import styles from "./screensaver.module.css"
 
 const Screensaver = () => {
+  const [circles, setCircles] = useState([])
   const [isLive] = useContext(IsLiveContext)
   const [showScreensaver, setShowScreensaver] = useState(false)
   const [timeInactive, setTimeInactive] = useState(0)
 
+  // increase timer every second
   useEffect(() => {
-    if (timeInactive > 10 && !isLive) {
-      setShowScreensaver(true)
+    console.log(timeInactive)
+    const timer = window.setTimeout(() => {
+      setTimeInactive(timeInactive => timeInactive + 1)
+    }, 1000)
+    return () => {
+      clearTimeout(timer)
     }
+  }, [timeInactive])
 
+  // set screensaver visibility
+  useEffect(() => {
+    if (timeInactive >= 9 && !isLive) {
+      setShowScreensaver(true)
+    } else {
+      setShowScreensaver(false)
+    }
+  }, [timeInactive, isLive])
+
+  // add circles
+  useEffect(() => {
+    if (showScreensaver) {
+      const generateCircle = () => {
+        const randomX = random(-50, window.innerWidth - 50)
+        const randomY = random(-50, window.innerHeight - 50)
+        return (
+          <div
+            className={styles.circle}
+            style={{ top: randomY, left: randomX }}
+            key={shortid.generate()}
+          />
+        )
+      }
+      setCircles(circles => circles.concat(generateCircle()))
+    } else {
+      window.setTimeout(() => {
+        setCircles([])
+      }, 1000)
+    }
+  }, [showScreensaver, timeInactive, setCircles])
+
+  // set up event listeners
+  useEffect(() => {
     const handleEvent = () => {
       setTimeInactive(0)
       if (showScreensaver) {
         setShowScreensaver(false)
       }
     }
-    const timer = window.setTimeout(() => {
-      setTimeInactive(timeInactive => timeInactive + 1)
-    }, 1000)
     // set up mouse and trackpad listeners
     window.addEventListener("click", handleEvent)
     window.addEventListener("mousemove", handleEvent)
@@ -31,13 +70,12 @@ const Screensaver = () => {
     window.addEventListener("DOMMouseScroll", handleEvent)
     // Clear timeout if the component is unmounted
     return () => {
-      clearTimeout(timer)
       window.addEventListener("click", handleEvent)
       window.addEventListener("mousemove", handleEvent)
       window.removeEventListener("mousewheel", handleEvent)
       window.removeEventListener("DOMMouseScroll", handleEvent)
     }
-  }, [timeInactive, setTimeInactive])
+  }, [showScreensaver, setTimeInactive])
 
   return (
     <div
@@ -50,11 +88,7 @@ const Screensaver = () => {
           [styles.isLive]: isLive,
         })}
       >
-        <div className={styles.circle} style={{ top: 140, left: 192 }} />
-        <div className={styles.circle} style={{ top: -50, left: 700 }} />
-        <div className={styles.circle} style={{ top: 370, left: 300 }} />
-        <div className={styles.circle} style={{ top: 950, left: 15 }} />
-        <div className={styles.circle} style={{ top: 1240, left: 768 }} />
+        {circles}
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
-.screensaver {
-    z-index: 2;
-    opacity: 0;
+.background {
+    z-index: -1;
+    opacity: 1;
     /* position */
     position: fixed;
     /* size */
@@ -14,16 +14,12 @@
     justify-content: center;
     align-items: center;
     /* transition */
-    transition: opacity 0.5s;
+    transition: opacity 1.5s;
     /* misc */
     pointer-events: none;
 }
 
-.screensaver.show-screensaver {
-    opacity: 1;
-}
-
-.screensaver .circles-container {
+.background .circles-container {
     position: relative;
     width: 100%;
     min-width: 100vw;
@@ -31,7 +27,7 @@
     min-height: 100vh;
 }
 
-.screensaver .circle {
+.background .circle {
     opacity: 1;
     position: absolute;
     z-index: 2;
@@ -42,6 +38,6 @@
     transition: background-color 0.5s;
 }
 
-.screensaver .circles-container.is-live .circle {
+.background .circles-container.is-live .circle {
     background-color: var(--color-red);
 }

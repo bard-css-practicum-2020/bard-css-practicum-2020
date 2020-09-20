@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import ReactPlayer from "react-player"
 
+import LiveDot from "~components/liveDot/liveDot"
+
 /* Import Local Styles */
 import styles from "./video.module.css"
 
@@ -50,6 +52,11 @@ const Video = ({ url }) => {
           {isMuted ? "Unmute" : "Mute"}
         </button>
         <p>
+          {isPlaying ? (
+            <LiveDot ignoreContext={true} initialState={true} />
+          ) : (
+            <LiveDot ignoreContext={true} initialState={false} />
+          )}{" "}
           {Math.round(progress)} / {Math.round(duration)}
         </p>
       </div>
