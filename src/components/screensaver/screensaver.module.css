@@ -1,0 +1,81 @@
+.screensaver {
+    z-index: 2;
+    opacity: 0;
+    /* position */
+    position: fixed;
+    /* size */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color */
+    background-color: var(--color-white);
+    /* transition */
+    transition: opacity 1.5s;
+    /* misc */
+    pointer-events: none;
+}
+
+.screensaver.show-screensaver {
+    opacity: 1;
+}
+
+.screensaver .circle {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    background: var(--color-red);
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.screensaver .blur-circle {
+    opacity: 0;
+    z-index: 1;
+    background: var(--color-red);
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    pointer-events: none;
+    animation-name: blur-circle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blur-circle {
+    0% {
+        opacity: 0;
+        filter: blur(60vw);
+    }
+    50% {
+        opacity: 0.5;
+        filter: blur(10vw);
+    }
+    100% {
+        opacity: 0;
+        filter: blur(60vw);
+    }
+}
