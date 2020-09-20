@@ -5,8 +5,6 @@ import IsLiveContext from "~context/isLive"
 
 import styles from "./index.module.css"
 
-// TODO: Add Timer to Return to Follow, or Click on 'Live' Functionality
-
 const Index = () => {
   const [, setIsLive] = useContext(IsLiveContext)
   let [timeInactive, setTimeInactive] = useState(0)
@@ -36,11 +34,32 @@ const Index = () => {
     }
   }, [timeInactive, setIsLive])
 
+  //
   useEffect(() => {
-    // followText.current = true
     const handleScroll = () => {
       setIsLive(false)
       followText.current = false
+    }
+    // set up mouse and trackpad listeners
+    window.addEventListener("mousewheel", handleScroll)
+    window.addEventListener("DOMMouseScroll", handleScroll)
+    // clean up mouse and trackpad listeners
+    return () => {
+      window.removeEventListener("mousewheel", handleScroll)
+      window.removeEventListener("DOMMouseScroll", handleScroll)
+    }
+  }, [setIsLive])
+
+  // if you touch the bottom of the page, set live
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.pageYOffset >=
+        document.body.offsetHeight
+      ) {
+        setIsLive(true)
+        followText.current = true
+      }
     }
     // set up mouse and trackpad listeners
     window.addEventListener("mousewheel", handleScroll)

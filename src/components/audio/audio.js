@@ -71,8 +71,8 @@ const Audio = ({ src, vtt }) => {
         <track default srcLang="en" kind="captions" src={vtt} />
         Sorry, your browser doesn't support embedded audio.
       </audio>
-      <div class={styles.song}>
-        <p class={styles.title}>Jingling the Night Away</p>
+      <div className={styles.song}>
+        <p className={styles.title}>Jingling the Night Away</p>
         <p>by Evan Backer</p>
       </div>
       <p></p>
@@ -90,7 +90,7 @@ const Audio = ({ src, vtt }) => {
               <LiveDot ignoreContext={true} initialState={false} />
             )}{" "}
           </span>{" "}
-          {currentTime} / {duration}
+          {Math.round(currentTime)} / {Math.round(duration)}
         </p>
       </div>
     </div>

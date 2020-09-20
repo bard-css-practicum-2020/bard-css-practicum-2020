@@ -39,6 +39,7 @@ const Video = ({ url }) => {
           muted={isMuted}
           onProgress={handleProgress}
           onDuration={handleDuration}
+          playsinline={true}
         />
       </div>
       <div className={styles.controls}>
@@ -49,7 +50,7 @@ const Video = ({ url }) => {
           {isMuted ? "Unmute" : "Mute"}
         </button>
         <p>
-          {progress} / {duration}
+          {Math.round(progress)} / {Math.round(duration)}
         </p>
       </div>
     </div>
