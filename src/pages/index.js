@@ -1,11 +1,14 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState, useRef, useEffect, useContext } from "react"
 import { Pace, OnChar, WindupChildren } from "windups"
+
+import IsLiveContext from "~context/isLive"
 
 import styles from "./index.module.css"
 
 // TODO: Add Timer to Return to Follow, or Click on 'Live' Functionality
 
 const Index = () => {
+  const [, setIsLive] = useContext(IsLiveContext)
   let [timeInactive, setTimeInactive] = useState(0)
   let followText = useRef(true)
 
@@ -13,6 +16,7 @@ const Index = () => {
   // begin following text again
   useEffect(() => {
     if (timeInactive > 10) {
+      setIsLive(true)
       followText.current = true
     }
     const handleScroll = () => {
@@ -30,11 +34,12 @@ const Index = () => {
       window.removeEventListener("mousewheel", handleScroll)
       window.removeEventListener("DOMMouseScroll", handleScroll)
     }
-  }, [timeInactive])
+  }, [timeInactive, setIsLive])
 
   useEffect(() => {
     // followText.current = true
     const handleScroll = () => {
+      setIsLive(false)
       followText.current = false
     }
     // set up mouse and trackpad listeners
@@ -45,7 +50,7 @@ const Index = () => {
       window.removeEventListener("mousewheel", handleScroll)
       window.removeEventListener("DOMMouseScroll", handleScroll)
     }
-  }, [])
+  }, [setIsLive])
 
   return (
     <div className={styles.index}>

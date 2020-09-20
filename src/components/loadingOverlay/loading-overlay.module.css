@@ -8,14 +8,80 @@
   left: 0;
   right: 0;
   bottom: 0;
+  /* display */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* color */
   background-color: var(--color-white);
   /* transition */
-  transition: opacity 0.3s;
+  transition: opacity 2s;
   /* misc */
   pointer-events: none;
 }
 
 .loading-overlay.loaded {
   opacity: 0;
+}
+
+.loading-overlay .circle {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  background: var(--color-red);
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.loading-overlay .circle.loaded {
+  animation-name: circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loading-overlay .blur-circle {
+  opacity: 0;
+  z-index: 1;
+  background: var(--color-red);
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.loading-overlay .blur-circle.loaded {
+  animation-name: blur-circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blur-circle {
+  0% {
+    opacity: 0;
+    filter: blur(60vw);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(10vw);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(60vw);
+  }
 }

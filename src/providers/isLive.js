@@ -9,14 +9,14 @@ const IsLiveProvider = ({ children, location }) => {
   useEffect(() => {
     if (location && location.pathname) {
       // if not on index, 'not live'
-      if (location.pathname === "/" && !isLive) {
+      if (location.pathname === "/") {
         setIsLive(true)
       }
-      if (location.pathname !== "/" && isLive) {
+      if (location.pathname !== "/") {
         setIsLive(false)
       }
     }
-  }, [location, isLive])
+  }, [location])
 
   return (
     <IsLiveContext.Provider value={[isLive, setIsLive]}>
