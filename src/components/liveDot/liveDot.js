@@ -6,14 +6,18 @@ import IsLiveContext from "~context/isLive"
 /* Import Local Styles */
 import styles from "./live-dot.module.css"
 
-const LiveDot = ({ ignoreContext = false, initialState = true }) => {
+const LiveDot = ({
+  ignoreContext = false,
+  initialState = true,
+  blink = true,
+}) => {
   const [isLive] = useContext(IsLiveContext)
 
   return ignoreContext ? (
     <span
       className={`live-dot ${styles.liveDot} ${
         initialState ? styles.isLive : null
-      }`}
+      } ${blink ? null : styles.noBlink}`}
     >
       ●
     </span>

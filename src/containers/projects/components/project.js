@@ -13,7 +13,7 @@ const Project = ({ date, link, title, author, live = false }) => (
     <div className={styles.time}>
       <p>
         <span>
-          <LiveDot ignoreContext={true} initialState={live} />
+          <LiveDot ignoreContext={true} initialState={live} blink={false} />
         </span>{" "}
         {format(date, "MM.dd")}
       </p>

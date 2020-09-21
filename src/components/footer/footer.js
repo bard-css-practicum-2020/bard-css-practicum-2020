@@ -50,7 +50,9 @@ const Footer = ({ location }) => {
         </p>
       </div>
       <div className={styles.unix}>
-        <UnixTime />
+        <Link to="/about">
+          <UnixTime />
+        </Link>
       </div>
     </footer>
   )

@@ -1,23 +1,28 @@
 import React from "react"
 import { graphql } from "gatsby"
+import format from "date-fns/format"
 
+import UnixTime from "~components/unixTime/unixTime"
 import Paragraph from "~components/paragraph/paragraph"
 
-import PlanetSrc from "./assets/planet.png"
+// import PlanetSrc from "./assets/planet.png"
 
 import styles from "./about.module.css"
 
 const About = ({ data }) => {
   return (
     <div className={styles.about}>
-      <img src={PlanetSrc} alt="planet" style={{ maxWidth: "300px" }} />
-      <br />
       <Paragraph>
         <a href="https://ccs.bard.edu/" target="_blank" rel="noreferrer">
           Center for Curatorial Studies and Hessel Museum
         </a>
         <br />
         42.0202897°, -73.9143773°
+      </Paragraph>
+      <Paragraph>
+        Streaming since 09.21.2020
+        <br />
+        Live for <UnixTime /> Seconds
       </Paragraph>
       <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -29,15 +34,16 @@ const About = ({ data }) => {
         mollit anim id est laborum.
       </Paragraph>
       <Paragraph>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur.
-      </Paragraph>
-      <Paragraph>
-        Last Updated {data.gitCommit.date}
-        <br />
-        Commit *{data.gitCommit.hash.slice(-7)}
+        Last Updated{" "}
+        <a
+          href="https://github.com/bard-css-practicum-2020/bard-css-practicum-2020"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {format(new Date(data.gitCommit.date), "MM.dd.yy")}
+        </a>
+        {/* <br /> */}
+        {/* Commit *{data.gitCommit.hash.slice(-7)} */}
       </Paragraph>
     </div>
   )

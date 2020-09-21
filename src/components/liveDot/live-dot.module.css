@@ -9,6 +9,10 @@
     -webkit-animation: blink-animation 2s steps(5, start) infinite;
 }
 
+.live-dot.is-live.no-blink {
+    animation: none;
+}
+
 @keyframes blink-animation {
     to {
         visibility: hidden;

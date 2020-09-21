@@ -39,10 +39,10 @@
   }
 }
 
-.footer .is-live a {
+.footer a {
   border-bottom-color: rgba(0, 0, 0, 0);
 }
 
-.footer .is-live a:hover {
+.footer a:hover {
   border-bottom-color: var(--color-light-gray);
 }
