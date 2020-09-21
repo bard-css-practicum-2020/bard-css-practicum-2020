@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { differenceInCalendarDays } from "date-fns"
 
 /* Import Global Components */
@@ -40,9 +41,9 @@ const Footer = ({ location }) => {
         <p>
           <LiveDot />{" "}
           {location.pathname === "/" ? (
-            <a href={projects[offsetIndex].link}>
+            <Link to={projects[offsetIndex].link}>
               {projects[offsetIndex].link}
-            </a>
+            </Link>
           ) : (
             location.pathname
           )}

@@ -17,9 +17,7 @@ const About = ({ data }) => {
           Center for Curatorial Studies and Hessel Museum
         </a>
         <br />
-        Latitude 42.0202897°
-        <br />
-        Longitude -73.9143773°
+        42.0202897°, -73.9143773°
       </Paragraph>
       <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

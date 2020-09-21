@@ -58,6 +58,7 @@ const Projects = () => {
               link={link}
               title={title}
               author={author}
+              live={offsetIndex === 0}
             />
           </li>
         )
