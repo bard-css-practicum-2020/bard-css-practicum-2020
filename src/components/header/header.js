@@ -27,9 +27,11 @@ const Header = () => {
         </li>
       </ul>
       <div className={styles.flags}>
-        <img src={MinusFourFlagSrc} alt="Minus Four" />
-        <p>-</p>
-        <img src={MinusFourFlagSrc} alt="Minus Four" />
+        {/* <img src={MinusFourFlagSrc} alt="Minus Four" /> */}
+        {/* <p>-</p> */}
+        <Link to="/about">
+          <img src={MinusFourFlagSrc} alt="Minus Four" />
+        </Link>
       </div>
     </header>
   )

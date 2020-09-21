@@ -540,9 +540,7 @@ const MuhebEsmatProject = () => (
       </BibliographyItem>
       <BibliographyItem id="reference-1">
         <i>BBC News</i>, “Taleban ‘Outlaw Internet,’” July 13, 2001.
-        <span style={{ whiteSpace: "nowrap" }}>
-          news.bbc.co.uk/2/hi/south_asia/1437852.stm.
-        </span>
+        <span>news.bbc.co.uk/2/hi/south_asia/1437852.stm.</span>
         <Footnote number={1} href="#footnote-1" />
         <Footnote number={2} href="#footnote-2" />
       </BibliographyItem>

@@ -25,10 +25,10 @@ header .flags {
 header .flags img {
   height: 1.4rem;
 }
-
+/* 
 header .flags img:first-of-type {
   padding-right: 1ch;
-}
+} */
 
 header .flags p {
   margin-right: 1ch;

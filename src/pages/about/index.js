@@ -5,7 +5,7 @@ import format from "date-fns/format"
 import UnixTime from "~components/unixTime/unixTime"
 import Paragraph from "~components/paragraph/paragraph"
 
-// import PlanetSrc from "./assets/planet.png"
+import TimezoneSrc from "../../components/header/resources/minus-four-flag.png"
 
 import styles from "./about.module.css"
 
@@ -20,7 +20,15 @@ const About = ({ data }) => {
         42.0202897°, -73.9143773°
       </Paragraph>
       <Paragraph>
-        Streaming since 09.21.2020
+        <img
+          src={TimezoneSrc}
+          alt="Timezone UTC-4 Flag"
+          style={{ height: "1.4rem" }}
+        />
+        UTC-4
+      </Paragraph>
+      <Paragraph>
+        Streaming since 09.21.2020 00:00:00
         <br />
         Live for <UnixTime /> Seconds
       </Paragraph>

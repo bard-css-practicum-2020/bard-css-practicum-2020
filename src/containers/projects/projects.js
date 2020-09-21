@@ -36,7 +36,7 @@ const Projects = () => {
     },
     {
       link: "/projects/rachel-steinberg",
-      title: "Project Title",
+      title: "Unidentified Persons Object",
       author: "Rachel Steinberg",
     },
   ]
