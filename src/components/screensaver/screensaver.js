@@ -15,7 +15,6 @@ const Screensaver = () => {
 
   // increase timer every second
   useEffect(() => {
-    console.log(timeInactive)
     const timer = window.setTimeout(() => {
       setTimeInactive(timeInactive => timeInactive + 1)
     }, 1000)
@@ -37,8 +36,8 @@ const Screensaver = () => {
   useEffect(() => {
     if (showScreensaver) {
       const generateCircle = () => {
-        const randomX = random(-50, window.innerWidth - 50)
-        const randomY = random(-50, window.innerHeight - 50)
+        const randomX = random(-50, window.innerWidth - 25)
+        const randomY = random(-50, window.innerHeight - 25)
         return (
           <div
             className={styles.circle}

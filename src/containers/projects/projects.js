@@ -1,4 +1,5 @@
 import React from "react"
+import { addDays, differenceInCalendarDays } from "date-fns"
 
 /* Import Local Components */
 import Project from "./components/project"
@@ -8,51 +9,63 @@ import styles from "./projects.module.css"
 
 /* note: alphabetical order */
 
-const Projects = () => (
-  <ul className={styles.projects}>
-    <li>
-      <Project
-        link="/projects/muheb-esmat"
-        title="Generation Livestream and Virtual Afghan Sphere"
-        author="Muheb Esmat"
-      />
-    </li>
-    <li>
-      <Project
-        link="/projects/julia-gardener"
-        title="PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk"
-        author="Julia Gardener"
-      />
-    </li>
-    <li>
-      <Project
-        link="/projects/brooke-nicholas"
-        title="Jingling the Night Away"
-        author="Brooke Nicholas"
-      />
-    </li>
-    <li>
-      <Project
-        link="/projects/maria-camila-montalvo-senior"
-        title="Interview with SHE Collective"
-        author="María Camila Montalvo Senior"
-      />
-    </li>
-    <li>
-      <Project
-        link="/projects/elizaveta-shneyderman"
-        title="Tung-Hui Hu Interview"
-        author="Elizaveta Shneyderman"
-      />
-    </li>
-    <li>
-      <Project
-        link="/projects/rachel-steinberg"
-        title="Project Title"
-        author="Rachel Steinberg"
-      />
-    </li>
-  </ul>
-)
+const Projects = () => {
+  const projects = [
+    {
+      link: "/projects/muheb-esmat",
+      title: "Generation Livestream and Virtual Afghan Sphere",
+      author: "Muheb Esmat",
+    },
+    {
+      link: "/projects/julia-gardener",
+      title: "PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk",
+      author: "Julia Gardener",
+    },
+    {
+      link: "/projects/brooke-nicholas",
+      title: "Jingling the Night Away",
+      author: "Brooke Nicholas",
+    },
+    {
+      link: "/projects/maria-camila-montalvo-senior",
+      title: "Interview with SHE Collective",
+      author: "María Camila Montalvo Senior",
+    },
+    {
+      link: "/projects/elizaveta-shneyderman",
+      title: "Tung-Hui Hu Interview",
+      author: "Elizaveta Shneyderman",
+    },
+    {
+      link: "/projects/rachel-steinberg",
+      title: "Project Title",
+      author: "Rachel Steinberg",
+    },
+  ]
+
+  const startDate = new Date(2020, 8, 20)
+  const daysSinceStartDate = differenceInCalendarDays(startDate, new Date())
+  const dayOffset = Math.abs(daysSinceStartDate % projects.length)
+  return (
+    <ul className={styles.projects}>
+      {projects.map(({ link, title, author }, index) => {
+        let offsetIndex = (index - dayOffset) % projects.length
+        if (offsetIndex < 0) {
+          offsetIndex = projects.length - Math.abs(offsetIndex)
+        }
+        return (
+          <li key={index}>
+            <Project
+              date={addDays(new Date(), offsetIndex)}
+              link={link}
+              title={title}
+              author={author}
+            />
+          </li>
+        )
+      })}
+    </ul>
+  )
+}
 
 export default Projects
