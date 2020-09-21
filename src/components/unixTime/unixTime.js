@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react"
+import differenceInSeconds from "date-fns/differenceInSeconds"
 
-const getUnixTime = () => Math.floor(Date.now() / 1000)
+// const getUnixTime = () => Math.floor(Date.now() / 1000)
+
+const getStartingTime = () => {
+  return differenceInSeconds(new Date(), new Date(2020, 8, 21))
+}
 
 const UnixTime = () => {
-  const [unixTime, setUnixTime] = useState(getUnixTime())
+  const [unixTime, setUnixTime] = useState(getStartingTime())
 
   useEffect(() => {
     const increaseUnixTimeTimeout = window.setTimeout(() => {

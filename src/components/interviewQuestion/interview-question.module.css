@@ -16,3 +16,10 @@
   border-radius: 4px;
   margin-right: 1ch;
 }
+
+.interview-question span.interviewer.homepage {
+  font-size: 1.525rem;
+  line-height: 2.75rem;
+  padding: 3px 8px;
+  padding-top: 6px;
+}

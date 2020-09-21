@@ -5,7 +5,7 @@ import Paragraph from "~components/paragraph/paragraph"
 import { bibliography } from "./bibliography.module.css"
 
 const Bibliography = ({ children }) => (
-  <div className={bibliography}>
+  <div className={`bibliography ${bibliography}`}>
     <Paragraph>Bibliography</Paragraph>
     <ul>{children}</ul>
   </div>

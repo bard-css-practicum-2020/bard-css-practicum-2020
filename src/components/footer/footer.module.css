@@ -38,3 +38,11 @@
     padding: 0rem;
   }
 }
+
+.footer .is-live a {
+  border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.footer .is-live a:hover {
+  border-bottom-color: var(--color-light-gray);
+}

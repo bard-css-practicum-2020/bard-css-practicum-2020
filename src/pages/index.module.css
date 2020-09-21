@@ -9,11 +9,27 @@
   max-width: 60ch;
 }
 
+.index img {
+  max-width: 60ch;
+}
+
+.index ul li {
+  font-size: 1.625rem;
+  line-height: 2.75rem;
+}
+
 @media (max-width: 768px) {
   .index p {
     font-size: 1rem;
     line-height: 1.375rem;
     margin-top: 1.375rem;
     margin-bottom: 0rem;
+  }
+  .index img {
+    max-width: none;
+  }
+  .index ul li {
+    font-size: 1rem;
+    line-height: 1.375rem;
   }
 }

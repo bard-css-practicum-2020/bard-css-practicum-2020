@@ -1,7 +1,13 @@
 import React, { useState, useRef, useEffect, useContext } from "react"
-import { Pace, OnChar, WindupChildren } from "windups"
+import { differenceInCalendarDays } from "date-fns"
 
 import IsLiveContext from "~context/isLive"
+
+import MuhebEsmat from "./index/components/muhebEsmat"
+import ElizavetaShneyderman from "./index/components/elizavetaShneyderman"
+import BrookeNicholas from "./index/components/brookeNicholas"
+import RachelSteinberg from "./index/components/rachelSteinberg"
+import JuliaGardener from "./index/components/juliaGardener"
 
 import styles from "./index.module.css"
 
@@ -10,10 +16,55 @@ const Index = () => {
   let [timeInactive, setTimeInactive] = useState(0)
   let followText = useRef(true)
 
+  const projects = [
+    {
+      link: "/projects/muheb-esmat",
+      title: "Generation Livestream and Virtual Afghan Sphere",
+      author: "Muheb Esmat",
+      content: JuliaGardener,
+    },
+    {
+      link: "/projects/julia-gardener",
+      title: "PRES Interview – Magdalena Moskalewicz and Daniel Muzyczuk",
+      author: "Julia Gardener",
+      content: JuliaGardener,
+    },
+    {
+      link: "/projects/brooke-nicholas",
+      title: "Jingling the Night Away",
+      author: "Brooke Nicholas",
+      content: BrookeNicholas,
+    },
+    {
+      link: "/projects/maria-camila-montalvo-senior",
+      title: "Interview with SHE Collective",
+      author: "María Camila Montalvo Senior",
+      content: MuhebEsmat,
+    },
+    {
+      link: "/projects/elizaveta-shneyderman",
+      title: "Tung-Hui Hu Interview",
+      author: "Elizaveta Shneyderman",
+      content: ElizavetaShneyderman,
+    },
+    {
+      link: "/projects/rachel-steinberg",
+      title: "Unidentified Persons Object",
+      author: "Rachel Steinberg",
+      content: RachelSteinberg,
+    },
+  ]
+
+  const startDate = new Date(2020, 8, 21)
+  const daysSinceStartDate = differenceInCalendarDays(startDate, new Date())
+  const offsetIndex = Math.abs(daysSinceStartDate % projects.length)
+
+  const Content = projects[offsetIndex].content
+
   // if no interaction for more than 10 seonds,
   // begin following text again
   useEffect(() => {
-    if (timeInactive > 10) {
+    if (timeInactive >= 9) {
       setIsLive(true)
       followText.current = true
     }
@@ -55,7 +106,7 @@ const Index = () => {
     const handleScroll = () => {
       if (
         window.innerHeight + window.pageYOffset >=
-        document.body.offsetHeight
+        document.body.offsetHeight - 10
       ) {
         setIsLive(true)
         followText.current = true
@@ -72,49 +123,8 @@ const Index = () => {
   }, [setIsLive])
 
   return (
-    <div className={styles.index}>
-      <WindupChildren>
-        <Pace ms={80}>
-          <OnChar
-            fn={() => {
-              if (followText.current) {
-                window.scrollTo({
-                  left: 0,
-                  top: document.body.scrollHeight,
-                  behavior: "smooth",
-                })
-              }
-            }}
-          >
-            <p>
-              Radio, despite being the world’s most ubiquitous means of mass
-              communication, exists as an unremarkable feature of everyday
-              life—a product of its near-invisible infrastructure. It remains
-              highly influential, however—a conduit for intimacy, renowned for
-              its capacity to traverse space. Radio builds communities in the
-              air, globally and locally; it provides a context and medium for
-              international governance; and it elicits a shared sense of
-              domesticity. In the present day, the bounds of “radio” and its
-              transmission get even muddier: the introduction of universally
-              shared time—infinite liveness via constant streaming—has broadened
-              what it means to be on the air, or “in-time,” with one another.
-            </p>
-            <p>
-              Radio, despite being the world’s most ubiquitous means of mass
-              communication, exists as an unremarkable feature of everyday
-              life—a product of its near-invisible infrastructure. It remains
-              highly influential, however—a conduit for intimacy, renowned for
-              its capacity to traverse space. Radio builds communities in the
-              air, globally and locally; it provides a context and medium for
-              international governance; and it elicits a shared sense of
-              domesticity. In the present day, the bounds of “radio” and its
-              transmission get even muddier: the introduction of universally
-              shared time—infinite liveness via constant streaming—has broadened
-              what it means to be on the air, or “in-time,” with one another.
-            </p>
-          </OnChar>
-        </Pace>
-      </WindupChildren>
+    <div className={`index ${styles.index}`}>
+      <Content followText={followText} />
     </div>
   )
 }

@@ -33,7 +33,10 @@
   border-color: var(--color-gray);
 }
 
-.player p {
+.audio .player p.text {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-top: 0;
   padding: 0.15rem 1rem;
   margin: 0;
   margin-right: 1rem;

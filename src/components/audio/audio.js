@@ -82,7 +82,7 @@ const Audio = ({ src, vtt }) => {
         ) : (
           <button onClick={play}>Play</button>
         )}
-        <p>
+        <p className={styles.text}>
           <span>
             {isPlaying ? (
               <LiveDot ignoreContext={true} initialState={true} />

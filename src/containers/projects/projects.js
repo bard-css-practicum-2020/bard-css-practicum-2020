@@ -7,8 +7,6 @@ import Project from "./components/project"
 /* Import Local Styles */
 import styles from "./projects.module.css"
 
-/* note: alphabetical order */
-
 const Projects = () => {
   const projects = [
     {
@@ -43,7 +41,7 @@ const Projects = () => {
     },
   ]
 
-  const startDate = new Date(2020, 8, 20)
+  const startDate = new Date(2020, 8, 21)
   const daysSinceStartDate = differenceInCalendarDays(startDate, new Date())
   const dayOffset = Math.abs(daysSinceStartDate % projects.length)
   return (

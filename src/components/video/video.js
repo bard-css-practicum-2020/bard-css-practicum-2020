@@ -6,9 +6,9 @@ import LiveDot from "~components/liveDot/liveDot"
 /* Import Local Styles */
 import styles from "./video.module.css"
 
-const Video = ({ url }) => {
-  const [isPlaying, setIsPlaying] = useState(false)
-  const [isMuted, setIsMuted] = useState(false)
+const Video = ({ url, muted = false, autoplay = false }) => {
+  const [isPlaying, setIsPlaying] = useState(autoplay)
+  const [isMuted, setIsMuted] = useState(muted)
   const [progress, setProgress] = useState(0)
   const [duration, setDuration] = useState(0)
 
