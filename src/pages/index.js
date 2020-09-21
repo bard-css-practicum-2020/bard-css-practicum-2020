@@ -21,7 +21,7 @@ const Index = () => {
       link: "/projects/muheb-esmat",
       title: "Generation Livestream and Virtual Afghan Sphere",
       author: "Muheb Esmat",
-      content: JuliaGardener,
+      content: MuhebEsmat,
     },
     {
       link: "/projects/julia-gardener",
