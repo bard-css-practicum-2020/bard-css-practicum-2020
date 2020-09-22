@@ -8,15 +8,17 @@ import IsLiveContext from "~context/isLive"
 import styles from "./background.module.css"
 
 const generateCircle = () => {
-  const randomX = random(-50, window.innerWidth - 50)
-  const randomY = random(-50, window.innerHeight - 50)
-  return (
-    <div
-      className={styles.circle}
-      style={{ top: randomY, left: randomX }}
-      key={shortid.generate()}
-    />
-  )
+  if (typeof window !== `undefined`) {
+    const randomX = random(-50, window.innerWidth - 50)
+    const randomY = random(-50, window.innerHeight - 50)
+    return (
+      <div
+        className={styles.circle}
+        style={{ top: randomY, left: randomX }}
+        key={shortid.generate()}
+      />
+    )
+  }
 }
 
 const generateCircles = () => {

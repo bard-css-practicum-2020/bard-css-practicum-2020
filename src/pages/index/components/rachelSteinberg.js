@@ -9,7 +9,7 @@ import Video from "~components/video/video"
 import ProgressBar from "~components/progressBar/progressBar"
 
 /* Import Assets */
-import ObjectsImageSrc from "../../projects/rachel-steinberg/resources/objects.jpg"
+import ObjectsImageSrc from "../../projects/rachel-steinberg/resources/Objects.jpg"
 import UPOTrailerSrc from "../../projects/rachel-steinberg/resources/UPO_trailer_sept11.mp4"
 
 const RachelSteinberg = ({ followText }) => (

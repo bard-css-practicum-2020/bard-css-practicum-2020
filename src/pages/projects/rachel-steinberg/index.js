@@ -13,7 +13,7 @@ import Video from "~components/video/video"
 import styles from "./rachel-steinberg.module.css"
 
 /* Import Local Assets */
-import ObjectsImageSrc from "./resources/objects.jpg"
+import ObjectsImageSrc from "./resources/Objects.jpg"
 import UPOTrailerSrc from "./resources/UPO_trailer_sept11.mp4"
 
 const RachelSteinbergProject = () => (

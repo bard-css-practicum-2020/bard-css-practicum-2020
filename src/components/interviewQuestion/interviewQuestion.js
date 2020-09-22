@@ -4,7 +4,6 @@ import classnames from "classnames"
 import styles from "./interview-question.module.css"
 
 const InterviewQuestion = ({ interviewer, homepage = false, children }) => {
-  console.log("test")
   return interviewer ? (
     <p className={styles.interviewQuestion}>
       <span
