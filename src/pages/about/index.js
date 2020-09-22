@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import format from "date-fns/format"
 
 import UnixTime from "~components/unixTime/unixTime"
+import LiveDot from "~components/liveDot/liveDot"
 import Paragraph from "~components/paragraph/paragraph"
 
 import TimezoneSrc from "../../components/header/resources/minus-four-flag.png"
@@ -33,13 +34,47 @@ const About = ({ data }) => {
         Live for <UnixTime /> Seconds
       </Paragraph>
       <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        <LiveDot ignoreContext={true} initialState={true} /> Itlaunches.today is
+        an online project developed by the second year students at the Center
+        for Curatorial Studies at Bard College. This web-based platform hosts a
+        series of essays, interviews, and commissioned works that grew out of
+        discussions around technologies of remote transmission such as radio and
+        other forms of broadcast. Essays and interviews explore experimental
+        sound production, relationships between cable networks and streaming
+        technologies, collaborative solidarity practices, and decentralized
+        mobile networks. The commissioned works include a sound work and
+        accompanying essay on the history of the jingle as well as a recorded
+        live-broadcast performance reframing the five senses into experiences
+        suited to remote communication.{" "}
+        <LiveDot ignoreContext={true} initialState={true} /> Itlaunches.today is
+        an online project developed by the second year students at the Center
+        for Curatorial Studies at Bard College. This web-based platform hosts a
+        series of essays, interviews, and commissioned works that grew out of
+        discussions around technologies of remote transmission such as radio and
+        other forms of broadcast. Essays and interviews explore experimental
+        sound production, relationships between cable networks and streaming
+        technologies, collaborative solidarity practices, and decentralized
+        mobile networks. The commissioned works include a sound work and
+        accompanying essay on the history of the jingle as well as a recorded
+        live-broadcast performance reframing the five senses into experiences
+        suited to remote communication.
+      </Paragraph>
+      <Paragraph>
+        The design of <LiveDot ignoreContext={true} initialState={true} />{" "}
+        Itlaunches.today was developed around the idea of “liveness” as it
+        translates between different technological mediums, borrowing visual
+        codes from common live-stream platforms. Simulating a broadcast in real
+        time, the site presents one project “live” each day. The site rotates
+        through the entire roster of projects over the course of a week, and
+        each one can be accessed at any point through the archive. The passage
+        of time in each live stream is measured in Unix time <UnixTime />,
+        typically used in operating systems to show the temporal distance from a
+        single point—which in this case is the launch of the site. Accruing in
+        units of single seconds, it is designed to be read by another operating
+        system, and is difficult to compute from the human perspective of
+        relational time. In addition to the ticking timecode, the site also
+        emphasizes paused moments through the appearance of dots that accrue
+        over the course of elongated inaction.
       </Paragraph>
       <Paragraph>
         Last Updated{" "}
