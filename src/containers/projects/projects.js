@@ -36,8 +36,8 @@ const Projects = () => {
     },
     {
       link: "/projects/rachel-steinberg",
-      title: "Unidentified Persons Object",
-      author: "Rachel Steinberg",
+      title: "Victoria Keddie: Unidentified Persons Object",
+      author: "Rachel Vera Steinberg",
     },
   ]
 
