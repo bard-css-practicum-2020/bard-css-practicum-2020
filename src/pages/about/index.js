@@ -73,8 +73,6 @@ const About = ({ data }) => {
         >
           {format(new Date(data.gitCommit.date), "MM.dd.yy")}
         </a>
-        {/* <br /> */}
-        {/* Commit *{data.gitCommit.hash.slice(-7)} */}
       </Paragraph>
     </div>
   )
