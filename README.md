@@ -1,1 +1,3 @@
-# CCS BARD - PRACTICUM 2020
+# ItLaunches.Today
+
+[Itlaunches.today is](itlaunches.today) an online project developed by the second year students at the Center for Curatorial Studies at Bard College. This web-based platform hosts a series of essays, interviews, and commissioned works that grew out of discussions around technologies of remote transmission such as radio and other forms of broadcast. Essays and interviews explore experimental sound production, relationships between cable networks and streaming technologies, collaborative solidarity practices, and decentralized mobile networks. The commissioned works include a sound work and accompanying essay on the history of the jingle as well as a recorded live-broadcast performance reframing the five senses into experiences suited to remote communication.
