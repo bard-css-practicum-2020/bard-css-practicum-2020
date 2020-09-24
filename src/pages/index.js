@@ -4,6 +4,7 @@ import { differenceInCalendarDays } from "date-fns"
 import IsLiveContext from "~context/isLive"
 
 import MuhebEsmat from "./index/components/muhebEsmat"
+import MariaCamilaMontalvoSenior from "./index/components/mariaCamilaMontalvoSenior"
 import ElizavetaShneyderman from "./index/components/elizavetaShneyderman"
 import BrookeNicholas from "./index/components/brookeNicholas"
 import RachelSteinberg from "./index/components/rachelSteinberg"
@@ -39,7 +40,7 @@ const Index = () => {
       link: "/projects/maria-camila-montalvo-senior",
       title: "Interview with SHE Collective",
       author: "María Camila Montalvo Senior",
-      content: MuhebEsmat,
+      content: MariaCamilaMontalvoSenior,
     },
     {
       link: "/projects/elizaveta-shneyderman",
