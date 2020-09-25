@@ -35,9 +35,16 @@ export default () => {
   }
 
   useEffect(() => {
+    const userDevice = navigator.userAgent
+    console.log("userDevice", userDevice)
     const throttleWrapper = throttle(listener, 10)
-    window.addEventListener("scroll", throttleWrapper)
+    if (window.outerWidth > 768) {
+      window.addEventListener("scroll", throttleWrapper)
+    } else {
+      window.addEventListener("touchmove", throttleWrapper)
+    }
     return () => {
+      window.removeEventListener("touchmove", throttleWrapper)
       window.removeEventListener("scroll", throttleWrapper)
     }
   }, [])

@@ -66,8 +66,13 @@ const Index = () => {
 
   const Content = projects[offsetIndex].content
 
+  useEffect(() => {
+    console.log("isLive", isLive)
+  }, [isLive])
+
   // scrolling up deactivates scroll tracking
   useEffect(() => {
+    console.log("scrollInfo", scrollInfo)
     if (scrollInfo.direction === "up") {
       setIsLive(false)
     }
@@ -127,10 +132,16 @@ const Index = () => {
       }
     }
     // set up mouse and trackpad listeners
-    window.addEventListener("mousewheel", handleScroll)
-    window.addEventListener("DOMMouseScroll", handleScroll)
+    if (window.outerWidth > 768) {
+      window.addEventListener("mousewheel", handleScroll)
+      window.addEventListener("DOMMouseScroll", handleScroll)
+    } else {
+      window.addEventListener("touchmove", handleScroll)
+    }
+
     // clean up mouse and trackpad listeners
     return () => {
+      window.removeEventListener("touchmove", handleScroll)
       window.removeEventListener("mousewheel", handleScroll)
       window.removeEventListener("DOMMouseScroll", handleScroll)
     }

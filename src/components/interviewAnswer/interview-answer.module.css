@@ -2,6 +2,7 @@
 }
 
 .interview-answer .subject {
+  font-family: "Authentic Sans";
   color: var(--color-black);
   font-size: 0.9rem;
   border-style: solid;
@@ -14,8 +15,21 @@
 }
 
 .interview-answer .subject.homepage {
+  font-family: "Authentic Sans";
   font-size: 1.525rem;
   line-height: 2.75rem;
   padding: 3px 8px;
   padding-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .interview-answer .subject.homepage {
+    font-family: "Authentic Sans";
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-top: 1.375rem;
+    margin-bottom: 0rem;
+    padding: 2px 8px;
+    padding-top: 5px;
+  }
 }
