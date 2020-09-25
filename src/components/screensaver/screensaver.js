@@ -66,12 +66,14 @@ const Screensaver = () => {
     window.addEventListener("click", handleEvent)
     window.addEventListener("mousemove", handleEvent)
     window.addEventListener("mousewheel", handleEvent)
+    window.addEventListener("scroll", handleEvent)
     window.addEventListener("DOMMouseScroll", handleEvent)
     // Clear timeout if the component is unmounted
     return () => {
       window.addEventListener("click", handleEvent)
       window.addEventListener("mousemove", handleEvent)
       window.removeEventListener("mousewheel", handleEvent)
+      window.addEventListener("scroll", handleEvent)
       window.removeEventListener("DOMMouseScroll", handleEvent)
     }
   }, [showScreensaver, setTimeInactive])

@@ -9,14 +9,18 @@ import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 
 /* Import Local Components */
-// import BackgroundImages from "./components/backgroundImages/backgroundImages"
+import ImageSwap from "./components/imageSwap/imageSwap"
+
+/* Import Local Assets */
+import ImageA from "./assets/elizaveta-01/a.jpg"
+import ImageB from "./assets/elizaveta-01/b.jpg"
 
 /* Import Local Styles */
 import styles from "./elizaveta-shneyderman.module.css"
 
 const ElizavtaShneydermanProject = () => (
   <Project
-    title="Tung-Hui Hu Interview"
+    title="On Air: In Conversation with Tung-Hui Hu"
     author="Elizaveta Shneyderman"
     className={styles.project}
   >
@@ -35,6 +39,7 @@ const ElizavtaShneydermanProject = () => (
           via constant streaming—has broadened what it means to be on the air,
           or “in-time,” with one another.
         </Paragraph>
+        <ImageSwap image={ImageA} swap={ImageB} />
         <Paragraph>
           I spoke with media scholar Tung-Hui Hu about radio and its oscillatory
           function in media history. We spoke about the territorial logic of

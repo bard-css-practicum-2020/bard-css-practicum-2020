@@ -31,7 +31,7 @@ const Projects = () => {
     },
     {
       link: "/projects/elizaveta-shneyderman",
-      title: "Tung-Hui Hu Interview",
+      title: "On Air: In Conversation with Tung-Hui Hu",
       author: "Elizaveta Shneyderman",
     },
     {
