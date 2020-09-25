@@ -1,32 +1,45 @@
 .image-swap {
-    position: relative;
-    max-width: 60ch;
-    margin-bottom: 1rem;
-    border-radius: 4px;
-    overflow: hidden;
+  font-size: 1rem;
+  display: block;
+  position: relative;
+  max-width: 40ch;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .image-swap > div:first-of-type {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .image-swap > div:first-of-type > img {
-    max-width: 800px;
+  max-width: 40ch;
+  mask-size: cover;
 }
 
 .image-swap > div:last-of-type {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-size: cover;
-    overflow: hidden;
-    transition: bottom 0.3s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  transition: bottom 0.3s;
 }
+
+.image-swap > canvas {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* 
 .image-swap > div:last-of-type > img {
     position: relative;

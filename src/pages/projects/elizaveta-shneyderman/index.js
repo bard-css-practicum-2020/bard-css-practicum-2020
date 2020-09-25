@@ -12,8 +12,8 @@ import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 import ImageSwap from "./components/imageSwap/imageSwap"
 
 /* Import Local Assets */
-import ImageA from "./assets/elizaveta-01/a.jpg"
-import ImageB from "./assets/elizaveta-01/b.jpg"
+import ImageA from "./assets/elizaveta-02/a.jpg"
+import ImageB from "./assets/elizaveta-02/b.png"
 
 /* Import Local Styles */
 import styles from "./elizaveta-shneyderman.module.css"
@@ -25,7 +25,7 @@ const ElizavtaShneydermanProject = () => (
     className={styles.project}
   >
     <div className={styles.content}>
-      <div>
+      <div style={{ maxWidth: "100%" }}>
         <Paragraph>
           Radio, despite being the world’s most ubiquitous means of mass
           communication, exists as an unremarkable feature of everyday life—a
@@ -39,7 +39,7 @@ const ElizavtaShneydermanProject = () => (
           via constant streaming—has broadened what it means to be on the air,
           or “in-time,” with one another.
         </Paragraph>
-        <ImageSwap image={ImageA} swap={ImageB} />
+        {/* <ImageSwap image={ImageA} swap={ImageB} /> */}
         <Paragraph>
           I spoke with media scholar Tung-Hui Hu about radio and its oscillatory
           function in media history. We spoke about the territorial logic of
@@ -407,12 +407,11 @@ const ElizavtaShneydermanProject = () => (
           recorded—it’s much easier to throw it out—so the question for me is
           how one writes a history of noise, as Blake has done. This is where
           imagination comes in and where noise can be recuperative: where, to
-          think of that amazing book of poetry
-          <i>​Zong​</i>, M. NourbeSe Philip uses a moment when her printer
-          jammed and overprinted lines of verse on top of itself as the book’s
-          last chapter, much like the forcibly suppressed sounds of those who
-          were murdered on the ship <i>Zong</i> m​ight have echoed and resounded
-          through the ocean.
+          think of that amazing book of poetry <i>​Zong​</i>, M. NourbeSe Philip
+          uses a moment when her printer jammed and overprinted lines of verse
+          on top of itself as the book’s last chapter, much like the forcibly
+          suppressed sounds of those who were murdered on the ship <i>Zong</i>{" "}
+          m​ight have echoed and resounded through the ocean.
         </InterviewAnswer>
         <InterviewAnswer>
           The question of shared space makes me think about how we so often have

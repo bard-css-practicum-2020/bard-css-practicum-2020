@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect, useContext } from "react"
 import { differenceInCalendarDays } from "date-fns"
 
+/* Import Global Hooks */
+import useScroll from "~hooks/useScroll"
+
 import IsLiveContext from "~context/isLive"
 
 import MuhebEsmat from "./index/components/muhebEsmat"
@@ -13,7 +16,8 @@ import JuliaGardener from "./index/components/juliaGardener"
 import styles from "./index.module.css"
 
 const Index = () => {
-  const [, setIsLive] = useContext(IsLiveContext)
+  const scrollInfo = useScroll()
+  const [isLive, setIsLive] = useContext(IsLiveContext)
   let [timeInactive, setTimeInactive] = useState(0)
   let followText = useRef(true)
 
@@ -62,45 +66,55 @@ const Index = () => {
 
   const Content = projects[offsetIndex].content
 
-  // if no interaction for more than 10 seonds,
-  // begin following text again
+  // scrolling up deactivates scroll tracking
   useEffect(() => {
-    if (timeInactive >= 9) {
-      setIsLive(true)
-      followText.current = true
+    if (scrollInfo.direction === "up") {
+      setIsLive(false)
     }
+  }, [scrollInfo, setIsLive])
+
+  // scrolling up resets time inactive
+  useEffect(() => {
+    if (scrollInfo.direction === "up") {
+      setTimeInactive(0)
+    }
+  }, [scrollInfo, setTimeInactive])
+
+  // programmatic scrolling down resets time inactive
+  useEffect(() => {
     const handleScroll = () => {
       setTimeInactive(0)
     }
-    const timer = window.setTimeout(() => {
-      setTimeInactive(timeInactive => timeInactive + 1)
-    }, 1000)
     // set up mouse and trackpad listeners
     window.addEventListener("mousewheel", handleScroll)
     window.addEventListener("DOMMouseScroll", handleScroll)
     // Clear timeout if the component is unmounted
     return () => {
-      clearTimeout(timer)
       window.removeEventListener("mousewheel", handleScroll)
       window.removeEventListener("DOMMouseScroll", handleScroll)
+    }
+  }, [setTimeInactive])
+
+  // set up timer
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setTimeInactive(timeInactive => timeInactive + 1)
+    }, 1000)
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [timeInactive, setTimeInactive])
+
+  // if timer value is over 9, go live
+  useEffect(() => {
+    if (timeInactive >= 9) {
+      setIsLive(true)
     }
   }, [timeInactive, setIsLive])
 
-  //
   useEffect(() => {
-    const handleScroll = () => {
-      setIsLive(false)
-      followText.current = false
-    }
-    // set up mouse and trackpad listeners
-    window.addEventListener("mousewheel", handleScroll)
-    window.addEventListener("DOMMouseScroll", handleScroll)
-    // clean up mouse and trackpad listeners
-    return () => {
-      window.removeEventListener("mousewheel", handleScroll)
-      window.removeEventListener("DOMMouseScroll", handleScroll)
-    }
-  }, [setIsLive])
+    followText.current = isLive
+  }, [isLive])
 
   // if you touch the bottom of the page, set live
   useEffect(() => {
@@ -110,7 +124,6 @@ const Index = () => {
         document.body.offsetHeight - 10
       ) {
         setIsLive(true)
-        followText.current = true
       }
     }
     // set up mouse and trackpad listeners
