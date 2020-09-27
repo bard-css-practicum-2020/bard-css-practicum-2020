@@ -15,7 +15,6 @@ const Audio = ({ src, vtt }) => {
   useEffect(() => {
     if (audioElementRef && audioElementRef.current) {
       // set listeners
-      audioElementRef.current.addEventListener("canplay", handleCanPlay)
       audioElementRef.current.addEventListener("play", handlePlay)
       audioElementRef.current.addEventListener("paused", handlePause)
       audioElementRef.current.addEventListener("pause", handlePause)
@@ -24,10 +23,6 @@ const Audio = ({ src, vtt }) => {
       audioElementRef.current.addEventListener("timeupdate", handleTimeUpdate)
     }
   }, [audioElementRef])
-
-  const handleCanPlay = () => {
-    console.log("canplay")
-  }
 
   const handlePlay = () => {
     setIsPlaying(true)

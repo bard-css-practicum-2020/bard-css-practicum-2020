@@ -13,7 +13,6 @@ const IsLiveProvider = ({ children, location }) => {
         setIsLive(true)
       }
       if (location.pathname !== "/") {
-        console.log("location.pathname", location.pathname)
         setIsLive(false)
       }
     }

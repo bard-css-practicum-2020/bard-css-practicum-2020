@@ -2,6 +2,7 @@ import React from "react"
 
 /* Import Global Providers */
 import IsLiveProvider from "~providers/isLive"
+import VideoPlayingProvider from "~providers/videoPlaying"
 
 /* Import Global Components */
 import SEO from "~components/seo/seo"
@@ -32,16 +33,18 @@ import styles from "./index.module.css"
 
 const Layout = ({ children, location }) => (
   <IsLiveProvider location={location}>
-    <SEO pathname={location.pathname} defer={false} />
-    <LoadingOverlay />
-    <Background />
-    <Screensaver />
-    <Timeline />
-    <div className={styles.layoutWrapper}>
-      <Header />
-      <main className={styles.layout}>{children}</main>
-      <Footer location={location} />
-    </div>
+    <VideoPlayingProvider>
+      <SEO pathname={location.pathname} defer={false} />
+      <LoadingOverlay />
+      <Background />
+      <Screensaver />
+      <Timeline />
+      <div className={styles.layoutWrapper}>
+        <Header />
+        <main className={styles.layout}>{children}</main>
+        <Footer location={location} />
+      </div>
+    </VideoPlayingProvider>
   </IsLiveProvider>
 )
 

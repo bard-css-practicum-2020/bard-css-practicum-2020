@@ -3,12 +3,14 @@ import classnames from "classnames"
 import random from "lodash.random"
 import shortid from "shortid"
 
+import VideoPlayingContext from "~context/videoPlaying"
 import IsLiveContext from "~context/isLive"
 
 import styles from "./screensaver.module.css"
 
 const Screensaver = () => {
   const [circles, setCircles] = useState([])
+  const [videoPlaying] = useContext(VideoPlayingContext)
   const [isLive] = useContext(IsLiveContext)
   const [showScreensaver, setShowScreensaver] = useState(false)
   const [timeInactive, setTimeInactive] = useState(0)
@@ -25,7 +27,7 @@ const Screensaver = () => {
 
   // set screensaver visibility
   useEffect(() => {
-    if (timeInactive >= 9 && !isLive) {
+    if (timeInactive >= 9 && !isLive && !videoPlaying) {
       setShowScreensaver(true)
     } else {
       setShowScreensaver(false)

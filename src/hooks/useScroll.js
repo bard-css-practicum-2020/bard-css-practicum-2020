@@ -35,8 +35,6 @@ export default () => {
   }
 
   useEffect(() => {
-    const userDevice = navigator.userAgent
-    console.log("userDevice", userDevice)
     const throttleWrapper = throttle(listener, 10)
     if (window.outerWidth > 768) {
       window.addEventListener("scroll", throttleWrapper)

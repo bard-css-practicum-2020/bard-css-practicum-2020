@@ -690,14 +690,16 @@ const JuliaGardener = ({ followText }) => (
           established ways of experiencing music—as well as the commitment to
           the shared aspect of musical experience, since Warsaw Autumn was a
           major international event. This concert took place at a high point of
-          Polish modernism (nowoczesność), about five years after the political
-          and cultural Thaw allowed any artistic experimentation on a larger
-          scale after Stalinism. Nineteen sixty was a moment when people were
-          still genuinely excited about the possibilities granted by new
-          technologies; a time when such technologies were seen as a tool for
-          emancipation. And so the elimination of live performers was not
-          conceived as a threat to live music—such dystopian views only enter
-          much later—but a welcome and necessary experimentation.
+          Polish modernism (nowoczesno
+          <span style={{ fontFamily: "Sans-Serif" }}>ść</span>), about five
+          years after the political and cultural Thaw allowed any artistic
+          experimentation on a larger scale after Stalinism. Nineteen sixty was
+          a moment when people were still genuinely excited about the
+          possibilities granted by new technologies; a time when such
+          technologies were seen as a tool for emancipation. And so the
+          elimination of live performers was not conceived as a threat to live
+          music—such dystopian views only enter much later—but a welcome and
+          necessary experimentation.
         </InterviewAnswer>
         <InterviewQuestion homepage={true}>
           I have a twofold question about PRES’s audience. You’ve both{" "}

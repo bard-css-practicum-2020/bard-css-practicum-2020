@@ -91,7 +91,6 @@ const ImageSwap = ({ image, swap }) => {
       }
 
       const dataURL = canvasRef.current.toDataURL("image/png")
-      console.log(dataURL)
       setImageUrl(dataURL)
     }
   }, [circles, imageRef, canvasRef, canvasContext])

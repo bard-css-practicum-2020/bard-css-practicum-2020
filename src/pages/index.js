@@ -66,13 +66,8 @@ const Index = () => {
 
   const Content = projects[offsetIndex].content
 
-  useEffect(() => {
-    console.log("isLive", isLive)
-  }, [isLive])
-
   // scrolling up deactivates scroll tracking
   useEffect(() => {
-    console.log("scrollInfo", scrollInfo)
     if (scrollInfo.direction === "up") {
       setIsLive(false)
     }

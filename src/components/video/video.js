@@ -1,5 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import ReactPlayer from "react-player"
+
+import VideoPlayingContext from "~context/videoPlaying"
 
 import LiveDot from "~components/liveDot/liveDot"
 
@@ -7,6 +9,7 @@ import LiveDot from "~components/liveDot/liveDot"
 import styles from "./video.module.css"
 
 const Video = ({ url, muted = false, autoplay = false }) => {
+  const [, setIsVideoPlaying] = useContext(VideoPlayingContext)
   const [isPlaying, setIsPlaying] = useState(autoplay)
   const [isMuted, setIsMuted] = useState(muted)
   const [progress, setProgress] = useState(0)
@@ -28,6 +31,10 @@ const Video = ({ url, muted = false, autoplay = false }) => {
   const handleDuration = duration => {
     setDuration(duration)
   }
+
+  useEffect(() => {
+    setIsVideoPlaying(isPlaying)
+  }, [isPlaying])
 
   return (
     <div className={styles.video}>
