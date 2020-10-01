@@ -1,4 +1,5 @@
 .image-swap {
+  opacity: 0;
   font-size: 1rem;
   display: block;
   position: relative;
@@ -6,6 +7,10 @@
   margin-bottom: 1rem;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.image-swap.loaded {
+  opacity: 1;
 }
 
 .image-swap > div:first-of-type {

@@ -34,7 +34,7 @@ const Video = ({ url, muted = false, autoplay = false }) => {
 
   useEffect(() => {
     setIsVideoPlaying(isPlaying)
-  }, [isPlaying])
+  }, [isPlaying, setIsVideoPlaying])
 
   return (
     <div className={styles.video}>

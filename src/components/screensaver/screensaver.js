@@ -32,7 +32,7 @@ const Screensaver = () => {
     } else {
       setShowScreensaver(false)
     }
-  }, [timeInactive, isLive])
+  }, [timeInactive, isLive, videoPlaying])
 
   // add circles
   useEffect(() => {

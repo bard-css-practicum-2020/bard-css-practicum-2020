@@ -12,8 +12,8 @@ import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 import ImageSwap from "./components/imageSwap/imageSwap"
 
 /* Import Local Assets */
-import ImageA from "./assets/elizaveta-02/a.jpg"
-import ImageB from "./assets/elizaveta-02/b.png"
+import ImageA from "./assets/elizaveta-03/a-alternate.jpg"
+import ImageB from "./assets/elizaveta-03/b.jpg"
 
 /* Import Local Styles */
 import styles from "./elizaveta-shneyderman.module.css"
@@ -26,6 +26,7 @@ const ElizavtaShneydermanProject = () => (
   >
     <div className={styles.content}>
       <div style={{ maxWidth: "100%" }}>
+        <ImageSwap image={ImageB} swap={ImageA} />
         <Paragraph>
           Radio, despite being the world’s most ubiquitous means of mass
           communication, exists as an unremarkable feature of everyday life—a
@@ -39,7 +40,7 @@ const ElizavtaShneydermanProject = () => (
           via constant streaming—has broadened what it means to be on the air,
           or “in-time,” with one another.
         </Paragraph>
-        {/* <ImageSwap image={ImageA} swap={ImageB} /> */}
+
         <Paragraph>
           I spoke with media scholar Tung-Hui Hu about radio and its oscillatory
           function in media history. We spoke about the territorial logic of

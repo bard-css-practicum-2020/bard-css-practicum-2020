@@ -1,10 +1,17 @@
 import React from "react"
-import { Pace, OnChar, WindupChildren } from "windups"
+import { Pause, Pace, OnChar, WindupChildren } from "windups"
 
 /* Import Global Components */
 import Paragraph from "~components/paragraph/paragraph"
 import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
+import ProgressBar from "~components/progressBar/progressBar"
+
+/* Import Local Components */
+import ImageSwap from "../../projects/elizaveta-shneyderman/components/imageSwap/imageSwap"
+/* Import Local Assets */
+import ImageA from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/a-alternate.jpg"
+import ImageB from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/b.jpg"
 
 const ElizavetaShneyderman = ({ followText }) => (
   <WindupChildren>
@@ -20,6 +27,21 @@ const ElizavetaShneyderman = ({ followText }) => (
           }
         }}
       >
+        <div
+          style={{
+            maxWidth: "60ch",
+            marginBottom: "1rem",
+            borderBottomLeftRadius: "4px",
+            borderBottomRightRadius: "4px",
+            overflow: "hidden",
+            width: "fit-content",
+            display: "inline-block",
+          }}
+        >
+          <ImageSwap image={ImageB} swap={ImageA} style={{ marginBottom: 0 }} />
+          <ProgressBar seconds={11} />
+        </div>
+        <Pause ms={9000} />
         <Paragraph>
           Radio, despite being the world’s most ubiquitous means of mass
           communication, exists as an unremarkable feature of everyday life—a
