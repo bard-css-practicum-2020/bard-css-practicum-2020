@@ -1,0 +1,14 @@
+.image-swap {
+  opacity: 1;
+  font-size: 1rem;
+  display: block;
+  position: relative;
+  max-width: 40ch;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.image-swap > div:first-of-type > img {
+  max-width: 40ch;
+}

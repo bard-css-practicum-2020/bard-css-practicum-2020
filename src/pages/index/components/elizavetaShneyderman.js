@@ -8,10 +8,17 @@ import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 import ProgressBar from "~components/progressBar/progressBar"
 
 /* Import Local Components */
-import ImageSwap from "../../projects/elizaveta-shneyderman/components/imageSwap/imageSwap"
+// import ImageSwap from "../../projects/elizaveta-shneyderman/components/imageSwap/imageSwap"
+import ImageSwap from "../../projects/elizaveta-shneyderman/components/imageSwapB/imageSwap"
+
 /* Import Local Assets */
-import ImageA from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/a-alternate.jpg"
-import ImageB from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/b.jpg"
+// import ImageA from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/a-alternate.jpg"
+import Image1 from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/a-rendered-1.jpg"
+import Image2 from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/a-rendered-2.jpg"
+import Image3 from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/a-rendered-3.jpg"
+import Image4 from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/a-rendered-4.jpg"
+import Image5 from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/a-rendered-5.jpg"
+// import ImageB from "../../projects/elizaveta-shneyderman/assets/elizaveta-03/b.jpg"
 
 const ElizavetaShneyderman = ({ followText }) => (
   <WindupChildren>
@@ -38,7 +45,10 @@ const ElizavetaShneyderman = ({ followText }) => (
             display: "inline-block",
           }}
         >
-          <ImageSwap image={ImageB} swap={ImageA} style={{ marginBottom: 0 }} />
+          <ImageSwap
+            swap={[Image1, Image2, Image3, Image4, Image5]}
+            style={{ marginBottom: 0 }}
+          />
           <ProgressBar seconds={11} />
         </div>
         <Pause ms={9000} />

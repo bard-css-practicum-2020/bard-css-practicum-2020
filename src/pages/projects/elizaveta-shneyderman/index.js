@@ -9,11 +9,16 @@ import InterviewAnswer from "~components/interviewAnswer/interviewAnswer"
 import InterviewQuestion from "~components/interviewQuestion/interviewQuestion"
 
 /* Import Local Components */
-import ImageSwap from "./components/imageSwap/imageSwap"
+import ImageSwap from "./components/imageSwapB/imageSwap"
 
 /* Import Local Assets */
-import ImageA from "./assets/elizaveta-03/a-alternate.jpg"
-import ImageB from "./assets/elizaveta-03/b.jpg"
+// import ImageA from "./assets/elizaveta-03/a-alternate.jpg"
+// import ImageB from "./assets/elizaveta-03/b.jpg"
+import Image1 from "./assets/elizaveta-03/a-rendered-1.jpg"
+import Image2 from "./assets/elizaveta-03/a-rendered-2.jpg"
+import Image3 from "./assets/elizaveta-03/a-rendered-3.jpg"
+import Image4 from "./assets/elizaveta-03/a-rendered-4.jpg"
+import Image5 from "./assets/elizaveta-03/a-rendered-5.jpg"
 
 /* Import Local Styles */
 import styles from "./elizaveta-shneyderman.module.css"
@@ -26,7 +31,7 @@ const ElizavtaShneydermanProject = () => (
   >
     <div className={styles.content}>
       <div style={{ maxWidth: "100%" }}>
-        <ImageSwap image={ImageB} swap={ImageA} />
+        <ImageSwap images={[Image1, Image2, Image3, Image4, Image5]} />
         <Paragraph>
           Radio, despite being the world’s most ubiquitous means of mass
           communication, exists as an unremarkable feature of everyday life—a
