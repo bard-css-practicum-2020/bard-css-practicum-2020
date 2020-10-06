@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 
 /* Import Local Contexts */
-import LanguageContext from "../../context/_language"
+import LanguageContext from "~context/language"
 
 /* Import Local Components */
 import EnglishContent from "./_englishContent"
