@@ -1,6 +1,7 @@
 import React from "react"
 
 /* Import Global Providers */
+import LanguageProvider from "~providers/language"
 import IsLiveProvider from "~providers/isLive"
 import VideoPlayingProvider from "~providers/videoPlaying"
 
@@ -34,16 +35,18 @@ import styles from "./index.module.css"
 const Layout = ({ children, location }) => (
   <IsLiveProvider location={location}>
     <VideoPlayingProvider>
-      <SEO pathname={location.pathname} defer={false} />
-      <LoadingOverlay />
-      <Background />
-      <Screensaver />
-      <Timeline />
-      <div className={styles.layoutWrapper}>
-        <Header />
-        <main className={styles.layout}>{children}</main>
-        <Footer location={location} />
-      </div>
+      <LanguageProvider>
+        <SEO pathname={location.pathname} defer={false} />
+        <LoadingOverlay />
+        <Background />
+        <Screensaver />
+        <Timeline />
+        <div className={styles.layoutWrapper}>
+          <Header />
+          <main className={styles.layout}>{children}</main>
+          <Footer location={location} />
+        </div>
+      </LanguageProvider>
     </VideoPlayingProvider>
   </IsLiveProvider>
 )

@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container div {
+    width: 50%;
+}
+
+.container div:first-of-type {
+    padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .container div {
+        width: 100%;
+    }
+    .container div:first-of-type {
+        padding-right: 0;
+    }
+    .container .content {
+        display: none;
+    }
+    .container .content.visible {
+        display: block;
+    }
+}
