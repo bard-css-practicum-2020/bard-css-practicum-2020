@@ -92,10 +92,18 @@ const JuliaGardenerProject = () => (
     <Paragraph>
       Since the Studio’s closure that same year, there has been a newfound wave
       of interest in their production. Notably, the products of this enthusiasm
-      include: post , MoMA’s digital research platform with a dedicated section
-      on PRES (with an extended list of sources here ); Sounding the Body
-      Electric: Experiments in Art and Music in Eastern Europe 1957–1984, an
-      exhibition held at{" "}
+      include:{" "}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://post.moma.org/themes/14-polish-radio-experimental-studio-a-close-look"
+      >
+        post
+      </a>
+      , MoMA’s digital research platform with a dedicated section on PRES (with
+      an extended list of sources here ); Sounding the Body Electric:
+      Experiments in Art and Music in Eastern Europe 1957–1984, an exhibition
+      held at{" "}
       <a target="_blank" rel="noreferrer" href="https://msl.org.pl/sounding/">
         Muzeum Sztuki
       </a>{" "}
@@ -194,24 +202,37 @@ const JuliaGardenerProject = () => (
     <InterviewAnswer subject="MM">
       Three things came into play that led me to PRES. At the time, in 2012, I
       was working at The Museum of Modern Art conducting research into the
-      Gilbert and Lila Silverman Fluxus Collection , and specifically focusing
-      on Fluxus connections in Eastern Europe. I was also one of the founding
-      editors of post , MoMA’s digital publication about to launch in early
-      2013, and together with my colleagues I was planning initial content on
-      modern art from Latin America, East Asia, and Eastern Europe—it was my job
-      to envision a subject for the latter. The first thing was that I had just
-      completed a PhD that looked at experimental art in Poland between roughly
-      1955 and 1970, and so that was my main expertise. The second, that the
-      Polish connection of George Maciunas in that early moment of Fluxus was
-      Józef Patkowski—the two had met long before PRES or Fluxus ever
-      existed—which led my research from visual arts into the milieu of
-      experimental music. The third was that other content planned for post was
-      thematizing Sogetsu Art Center , a major hub for experimental music in
-      Tokyo, which meant that the editorial team gave a lot of thought to the
-      idea of <i>site</i> as a conveyor for artistic practice. These three
-      elements: Fluxus, Poland, and focus on sites of artistic production came
-      together to bring to my attention the Polish Radio Experimental Studio as
-      the perfect case study.
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://post.moma.org/by-the-way-whats-fluxus-jon-hendricks-on-the-formation-of-the-gilbert-and-lila-silverman-fluxus-collection/"
+      >
+        Gilbert and Lila Silverman Fluxus Collection
+      </a>
+      , and specifically focusing on Fluxus connections in Eastern Europe. I was
+      also one of the founding editors of post , MoMA’s digital publication
+      about to launch in early 2013, and together with my colleagues I was
+      planning initial content on modern art from Latin America, East Asia, and
+      Eastern Europe—it was my job to envision a subject for the latter. The
+      first thing was that I had just completed a PhD that looked at
+      experimental art in Poland between roughly 1955 and 1970, and so that was
+      my main expertise. The second, that the Polish connection of George
+      Maciunas in that early moment of Fluxus was Józef Patkowski—the two had
+      met long before PRES or Fluxus ever existed—which led my research from
+      visual arts into the milieu of experimental music. The third was that
+      other content planned for post was thematizing{" "}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://post.moma.org/content_items/154-a-very-brief-history-of-the-sogetsu-art-center"
+      >
+        Sogetsu Art Center
+      </a>
+      , a major hub for experimental music in Tokyo, which meant that the
+      editorial team gave a lot of thought to the idea of <i>site</i> as a
+      conveyor for artistic practice. These three elements: Fluxus, Poland, and
+      focus on sites of artistic production came together to bring to my
+      attention the Polish Radio Experimental Studio as the perfect case study.
     </InterviewAnswer>
     <InterviewAnswer subject="DM">
       There were two decisive moments when it comes to tracing the recent
@@ -397,8 +418,15 @@ const JuliaGardenerProject = () => (
     </InterviewAnswer>
     <InterviewQuestion>
       Following from this, Daniel, I wanted to open the next question with a
-      reference to an incredible segment from an interview you did with
-      Eugeniusz Rudnik, where he said:
+      reference to an incredible segment from{" "}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://post.moma.org/how-much-rudnik-is-in-penderecki-and-how-much-rudnik-is-in-nordheim-interview-with-eugeniusz-rudnik/"
+      >
+        an interview
+      </a>{" "}
+      you did with Eugeniusz Rudnik, where he said:
     </InterviewQuestion>
     <InterviewQuestion>
       <i>
@@ -637,11 +665,18 @@ const JuliaGardenerProject = () => (
       museum?
     </InterviewAnswer>
     <InterviewQuestion>
-      Magdalena, I wanted to turn to your essay on magnetic tape as an
-      instrument. In it, you mention the first electroacoustic concert in
-      Poland, which took place in 1960—an event that was part of the Warsaw
-      Autumn Festival, which had notable overlaps with the Studio. It was the
-      first occasion for playing Włodzimierz Kotoński’s{" "}
+      Magdalena, I wanted to turn to{" "}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://post.moma.org/magnetic-tape-as-instrument-a-rare-selection-of-electroacoustic-music-from-poland/"
+      >
+        your essay
+      </a>{" "}
+      on magnetic tape as an instrument. In it, you mention the first
+      electroacoustic concert in Poland, which took place in 1960—an event that
+      was part of the Warsaw Autumn Festival, which had notable overlaps with
+      the Studio. It was the first occasion for playing Włodzimierz Kotoński’s{" "}
       <a
         target="_blank"
         rel="noreferrer"
@@ -722,7 +757,15 @@ const JuliaGardenerProject = () => (
       referenced his work in their music.
     </InterviewAnswer>
     <InterviewQuestion>
-      To close, I wanted to turn to Bolesław Błaszczyk’s words , which read—“
+      To close, I wanted to turn to{" "}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://post.moma.org/content_items/400-polish-radio-experimental-studio-a-galaxy-of-writings-prints-and-sound"
+      >
+        Bolesław Błaszczyk’s words
+      </a>
+      , which read—“
       <i>
         Rescued from near-oblivion, PRES is finally becoming recognized for its
         important contributions to European music and art. The galaxy proposed
